@@ -1,0 +1,16 @@
+{
+  "model": "logistic high * context + scaled elevation + scaled slope + lon + lat + lon^2 + lat^2 + lon*lat + C(year)",
+  "reference": "permanent, low HDSI, 2018",
+  "standardization": "common complete-case low/high sample, observed covariate distribution",
+  "uncertainty": "grid clustered sandwich, delta method; does not resolve spatial cross-grid dependence",
+  "landcover": "omitted: 41.95% fractional LC_Type1 codes; original categorical landcover cannot be reconstructed",
+  "uncontrolled": [
+    "irrigation",
+    "groundwater",
+    "soil properties",
+    "independent long-term climate",
+    "valid categorical landcover"
+  ],
+  "M0_M1_identical": true,
+  "seed": 20261020
+}

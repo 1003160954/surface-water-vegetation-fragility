@@ -1,0 +1,81 @@
+{
+  "time_utc": "2026-10-20T07:44:42.206298+00:00",
+  "checks": [
+    {
+      "check": "original AFB and95%CI exact to1e-12",
+      "pass": true
+    },
+    {
+      "check": "all original context risks exact",
+      "pass": true
+    },
+    {
+      "check": "all original risk sample counts exact",
+      "pass": true
+    },
+    {
+      "check": "main sample236995 and48843",
+      "pass": true
+    },
+    {
+      "check": "original GEE distance algorithm rerun matches panel",
+      "pass": true
+    },
+    {
+      "check": "native geodesic contradicts original scale labels",
+      "pass": true
+    },
+    {
+      "check": "metric projection matches independent geodesic within50m",
+      "pass": true
+    },
+    {
+      "check": "harmonized models converge and full rank",
+      "pass": true
+    },
+    {
+      "check": "corrected 1km classification covers48843 unique grids",
+      "pass": true
+    },
+    {
+      "check": "corrected flags binary",
+      "pass": true
+    },
+    {
+      "check": "lightweight and full distance classification agree17056 grids",
+      "pass": true
+    },
+    {
+      "check": "corrected models converge and full rank",
+      "pass": true
+    },
+    {
+      "check": "heavy task pause flag preserved",
+      "pass": true
+    },
+    {
+      "check": "all delivered Python sources parse",
+      "pass": true
+    },
+    {
+      "check": "17 independent historical values counted",
+      "pass": true
+    },
+    {
+      "check": "reference application produces finite z",
+      "pass": true
+    },
+    {
+      "check": "overlapping baseline prohibited",
+      "pass": true
+    },
+    {
+      "check": "duplicate historical grid-year-step prohibited",
+      "pass": true
+    },
+    {
+      "check": "figures have nonempty PDF outputs",
+      "pass": true
+    }
+  ]
+}

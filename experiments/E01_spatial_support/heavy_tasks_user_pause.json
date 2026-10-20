@@ -1,0 +1,139 @@
+{
+  "user_request": "Prioritize lightweight1km contexts; pause heavy tasks",
+  "time_utc": "2026-10-20T05:55:22.102214+00:00",
+  "resume_requires": "resubmit cancelled tasks from retained source recipes; completed outputs preserved",
+  "records": [
+    {
+      "task_id": "SU7YOZJASEXCP4SKOGCTY7KD",
+      "description": "E01_corrected_centroids_20261020_UTM43",
+      "prior_state": "COMPLETED",
+      "action": "retained_completed_or_terminal"
+    },
+    {
+      "task_id": "EGU3Y6SBNUN7TSOVBCFHCOQQ",
+      "description": "E01_corrected_centroids_20261020_UTM44",
+      "prior_state": "COMPLETED",
+      "action": "retained_completed_or_terminal"
+    },
+    {
+      "task_id": "PCSI3OYQVGN32LNZMMEY7JTR",
+      "description": "E01_corrected_centroids_20261020_UTM45",
+      "prior_state": "COMPLETED",
+      "action": "retained_completed_or_terminal"
+    },
+    {
+      "task_id": "RO7ECCQZXPOIVS7KU6XHVP3G",
+      "description": "E01_corrected_centroids_20261020_UTM46",
+      "prior_state": "COMPLETED",
+      "action": "retained_completed_or_terminal"
+    },
+    {
+      "task_id": "D2UPOIITQNFKXFDFM6XLE25D",
+      "description": "E01_corrected_centroids_20261020_UTM47",
+      "prior_state": "COMPLETED",
+      "action": "retained_completed_or_terminal"
+    },
+    {
+      "task_id": "W6EKVMOEFDEMX7UP2EX3WNJ3",
+      "description": "E01_corrected_centroids_20261020_UTM48",
+      "prior_state": "COMPLETED",
+      "action": "retained_completed_or_terminal"
+    },
+    {
+      "task_id": "UDJBGZDE6B6MO2CHIWDIX5EK",
+      "description": "E01_corrected_centroids_20261020_UTM49",
+      "prior_state": "RUNNING",
+      "action": "cancelled_for_user_requested_pause"
+    },
+    {
+      "task_id": "LVWHMTVIT45J64DS3W2BSTD2",
+      "description": "E01_corrected_centroids_20261020_UTM50",
+      "prior_state": "RUNNING",
+      "action": "cancelled_for_user_requested_pause"
+    },
+    {
+      "task_id": "ZCHGXGNAIZJIYHVP6CT4P724",
+      "description": "E01_corrected_centroids_20261020_UTM51",
+      "prior_state": "RUNNING",
+      "action": "cancelled_for_user_requested_pause"
+    },
+    {
+      "task_id": "3AJDVQFQSVVZFEK6Z4433BKK",
+      "description": "E01_corrected_centroids_20261020_UTM52",
+      "prior_state": "READY",
+      "action": "cancelled_for_user_requested_pause"
+    },
+    {
+      "task_id": "FO7NR6H47SWWWLNU3WU6LSQX",
+      "description": "E01_corrected_centroids_20261020_UTM53",
+      "prior_state": "READY",
+      "action": "cancelled_for_user_requested_pause"
+    },
+    {
+      "task_id": "EFGMRDYYRQMKUCWIYBQQU4X6",
+      "description": "E01_within_cell_20261020_UTM43",
+      "prior_state": "READY",
+      "action": "cancelled_for_user_requested_pause"
+    },
+    {
+      "task_id": "KAYIIF5IGERBICIPE4F3JDS4",
+      "description": "E01_within_cell_20261020_UTM44",
+      "prior_state": "READY",
+      "action": "cancelled_for_user_requested_pause"
+    },
+    {
+      "task_id": "2LHGY3IGCR5HQQR3H26DMH4Q",
+      "description": "E01_within_cell_20261020_UTM45",
+      "prior_state": "READY",
+      "action": "cancelled_for_user_requested_pause"
+    },
+    {
+      "task_id": "4MXL34CJ6KMGQZE5BEDG2U5H",
+      "description": "E01_within_cell_20261020_UTM46",
+      "prior_state": "READY",
+      "action": "cancelled_for_user_requested_pause"
+    },
+    {
+      "task_id": "ITOST2S5N6GBBTNJNFYLEOYO",
+      "description": "E01_within_cell_20261020_UTM47",
+      "prior_state": "READY",
+      "action": "cancelled_for_user_requested_pause"
+    },
+    {
+      "task_id": "JMCSD5JONVQW3DIGOH73ILLY",
+      "description": "E01_within_cell_20261020_UTM48",
+      "prior_state": "READY",
+      "action": "cancelled_for_user_requested_pause"
+    },
+    {
+      "task_id": "H454IINYN5NC2SOTB36UMH6I",
+      "description": "E01_within_cell_20261020_UTM49",
+      "prior_state": "READY",
+      "action": "cancelled_for_user_requested_pause"
+    },
+    {
+      "task_id": "IC4ZNVOC4SYLRIDJZ2DHUM7H",
+      "description": "E01_within_cell_20261020_UTM50",
+      "prior_state": "READY",
+      "action": "cancelled_for_user_requested_pause"
+    },
+    {
+      "task_id": "UDNTZAB256IGAG5WHHRMYW4L",
+      "description": "E01_within_cell_20261020_UTM51",
+      "prior_state": "READY",
+      "action": "cancelled_for_user_requested_pause"
+    },
+    {
+      "task_id": "MF2M6UXSXEBP5JZOKNIIVLUT",
+      "description": "E01_within_cell_20261020_UTM52",
+      "prior_state": "READY",
+      "action": "cancelled_for_user_requested_pause"
+    },
+    {
+      "task_id": "A6DRFXXK7LPEZIPYU2AH3CHL",
+      "description": "E01_within_cell_20261020_UTM53",
+      "prior_state": "READY",
+      "action": "cancelled_for_user_requested_pause"
+    }
+  ]
+}

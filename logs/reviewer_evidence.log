@@ -1,0 +1,10 @@
+REVIEWER EVIDENCE SAVED 27 worked grid-years; balance
+                           stage                covariate  permanent_mean  seasonal_mean       SMD  n_grids
+            all_corrected_grids                elevation     1292.114871     942.069829 -0.230732    17811
+            all_corrected_grids                    slope        0.762860       0.604473 -0.172350    17811
+            all_corrected_grids    climate_annual_temp_C       10.687873      10.964093  0.037039    17811
+            all_corrected_grids climate_annual_precip_mm      910.159903     853.953136 -0.118333    17811
+retained_common_strata_weighted                elevation      994.645759     940.533083 -0.037211    13881
+retained_common_strata_weighted                    slope        0.564633       0.563370 -0.001532    13881
+retained_common_strata_weighted    climate_annual_temp_C       10.947799      11.142778  0.027844    13881
+retained_common_strata_weighted climate_annual_precip_mm      865.487141     850.252053 -0.033488    13881

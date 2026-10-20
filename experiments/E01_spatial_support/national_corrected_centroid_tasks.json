@@ -1,0 +1,89 @@
+{
+  "created_utc": "2026-10-20T05:23:59.623278+00:00",
+  "purpose": "full-sample correction of original distance algorithm; 30m UTM per 6-degree zone; no within-cell support yet",
+  "occurrence": 80,
+  "seasonality": 10,
+  "seasonal_definition": "1 <= seasonality <10",
+  "search_radius_km": 61.44,
+  "range_flag": "dist <61.44; farther distances are censored, not valid exact distances",
+  "folder": "aquatic_revision_E01_20261020",
+  "tasks": [
+    {
+      "zone": 43,
+      "n_grid": 227,
+      "task_id": "SU7YOZJASEXCP4SKOGCTY7KD",
+      "description": "E01_corrected_centroids_20261020_UTM43",
+      "crs": "EPSG:32643"
+    },
+    {
+      "zone": 44,
+      "n_grid": 676,
+      "task_id": "EGU3Y6SBNUN7TSOVBCFHCOQQ",
+      "description": "E01_corrected_centroids_20261020_UTM44",
+      "crs": "EPSG:32644"
+    },
+    {
+      "zone": 45,
+      "n_grid": 1102,
+      "task_id": "PCSI3OYQVGN32LNZMMEY7JTR",
+      "description": "E01_corrected_centroids_20261020_UTM45",
+      "crs": "EPSG:32645"
+    },
+    {
+      "zone": 46,
+      "n_grid": 1918,
+      "task_id": "RO7ECCQZXPOIVS7KU6XHVP3G",
+      "description": "E01_corrected_centroids_20261020_UTM46",
+      "crs": "EPSG:32646"
+    },
+    {
+      "zone": 47,
+      "n_grid": 5711,
+      "task_id": "D2UPOIITQNFKXFDFM6XLE25D",
+      "description": "E01_corrected_centroids_20261020_UTM47",
+      "crs": "EPSG:32647"
+    },
+    {
+      "zone": 48,
+      "n_grid": 7422,
+      "task_id": "W6EKVMOEFDEMX7UP2EX3WNJ3",
+      "description": "E01_corrected_centroids_20261020_UTM48",
+      "crs": "EPSG:32648"
+    },
+    {
+      "zone": 49,
+      "n_grid": 10785,
+      "task_id": "UDJBGZDE6B6MO2CHIWDIX5EK",
+      "description": "E01_corrected_centroids_20261020_UTM49",
+      "crs": "EPSG:32649"
+    },
+    {
+      "zone": 50,
+      "n_grid": 12183,
+      "task_id": "LVWHMTVIT45J64DS3W2BSTD2",
+      "description": "E01_corrected_centroids_20261020_UTM50",
+      "crs": "EPSG:32650"
+    },
+    {
+      "zone": 51,
+      "n_grid": 6406,
+      "task_id": "ZCHGXGNAIZJIYHVP6CT4P724",
+      "description": "E01_corrected_centroids_20261020_UTM51",
+      "crs": "EPSG:32651"
+    },
+    {
+      "zone": 52,
+      "n_grid": 2181,
+      "task_id": "3AJDVQFQSVVZFEK6Z4433BKK",
+      "description": "E01_corrected_centroids_20261020_UTM52",
+      "crs": "EPSG:32652"
+    },
+    {
+      "zone": 53,
+      "n_grid": 232,
+      "task_id": "FO7NR6H47SWWWLNU3WU6LSQX",
+      "description": "E01_corrected_centroids_20261020_UTM53",
+      "crs": "EPSG:32653"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+field,dtype,missing_n,missing_fraction,unit_or_semantics,lineage_note
+grid_id,str,0,0.0,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+year,Int64,0,0.0,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+spring_EVI_z,float64,6490,0.0265650454757558,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_LAI_z,float64,7274,0.0297741357150458,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_VPD_z,float64,6395,0.0261761888778826,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_LST_Day_z,float64,6374,0.0260902311036159,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_SM_rootproxy_z,float64,6395,0.0261761888778826,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_Precip_z,float64,6395,0.0261761888778826,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_Tair_z,float64,6395,0.0261761888778826,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_EVI_anom,float64,110,0.0004502550080636,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_LAI_anom,float64,880,0.0036020400645092,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_VPD_anom,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_LST_Day_anom,float64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_SM_rootproxy_anom,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_Precip_anom,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_Tair_anom,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_EVI,float64,110,0.0004502550080636,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_LAI,float64,880,0.0036020400645092,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_VPD,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_LST_Day,float64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_SM_rootproxy,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_Precip,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_Tair,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_n_steps,int64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_EVI_from_patch_frac,float64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+spring_LAI_from_patch_frac,float64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_EVI_z,float64,6488,0.0265568590210637,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_LAI_z,float64,7255,0.0296963643954712,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_VPD_z,float64,6395,0.0261761888778826,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_LST_Day_z,float64,6374,0.0260902311036159,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_SM_rootproxy_z,float64,6395,0.0261761888778826,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_Precip_z,float64,6395,0.0261761888778826,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_Tair_z,float64,6395,0.0261761888778826,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_EVI_anom,float64,108,0.0004420685533715,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_LAI_anom,float64,881,0.0036061332918552,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_VPD_anom,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_LST_Day_anom,float64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_SM_rootproxy_anom,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_Precip_anom,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_Tair_anom,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_EVI,float64,108,0.0004420685533715,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_LAI,float64,881,0.0036061332918552,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_VPD,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_LST_Day,float64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_SM_rootproxy,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_Precip,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_Tair,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_n_steps,int64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_EVI_from_patch_frac,float64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+summer_LAI_from_patch_frac,float64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_EVI_z,float64,6498,0.026597791294524,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_LAI_z,float64,7261,0.0297209237595474,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_VPD_z,float64,6395,0.0261761888778826,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_LST_Day_z,float64,6374,0.0260902311036159,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_SM_rootproxy_z,float64,6395,0.0261761888778826,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_Precip_z,float64,6395,0.0261761888778826,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_Tair_z,float64,6395,0.0261761888778826,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_EVI_anom,float64,113,0.0004625346901017,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_LAI_anom,float64,881,0.0036061332918552,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_VPD_anom,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_LST_Day_anom,float64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_SM_rootproxy_anom,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_Precip_anom,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_Tair_anom,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_EVI,float64,113,0.0004625346901017,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_LAI,float64,881,0.0036061332918552,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_VPD,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_LST_Day,float64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_SM_rootproxy,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_Precip,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_Tair,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_n_steps,int64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_EVI_from_patch_frac,float64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+late_summer_LAI_from_patch_frac,float64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_EVI_z,float64,6501,0.0266100709765621,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_LAI_z,float64,7255,0.0296963643954712,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_VPD_z,float64,6395,0.0261761888778826,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_LST_Day_z,float64,6374,0.0260902311036159,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_SM_rootproxy_z,float64,6395,0.0261761888778826,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_Precip_z,float64,6395,0.0261761888778826,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_Tair_z,float64,6395,0.0261761888778826,dimensionless seasonal mean of16-day standardized anomalies,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_EVI_anom,float64,123,0.000503466963562,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_LAI_anom,float64,880,0.0036020400645092,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_VPD_anom,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_LST_Day_anom,float64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_SM_rootproxy_anom,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_Precip_anom,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_Tair_anom,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_EVI,float64,123,0.000503466963562,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_LAI,float64,880,0.0036020400645092,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_VPD,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_LST_Day,float64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_SM_rootproxy,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_Precip,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_Tair,float64,21,8.595777426669833e-05,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_n_steps,int64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_EVI_from_patch_frac,float64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+autumn_LAI_from_patch_frac,float64,0,0.0,source units require verified product provenance,Supplied seasonal panel; recovered seasonal recipe; exact original collection IDs/QA partly unresolved
+lon,float64,0,0.0,decimal degrees,Supplied analysis export; field-level dtype/missingness recorded
+lat,float64,0,0.0,decimal degrees,Supplied analysis export; field-level dtype/missingness recorded
+region_id,str,0,0.0,"processing tile code, not ecological macroregion",Supplied analysis export; field-level dtype/missingness recorded
+elevation,float64,0,0.0,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+slope,float64,0,0.0,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+LC_Type1,float64,0,0.0,mean categorical code; not a valid landcover class,Supplied analysis export; field-level dtype/missingness recorded
+lc_veg_frac,float64,0,0.0,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+evi_peak_frac,float64,0,0.0,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+evi_amp_frac,float64,0,0.0,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+valid_frac,float64,0,0.0,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+Greenup_1,float64,26,0.0001064239109968,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+Peak_1,float64,26,0.0001064239109968,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+Dormancy_1,float64,26,0.0001064239109968,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+valid_x,bool,0,0.0,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+valid_y_evi,bool,0,0.0,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+valid_y_lai,bool,0,0.0,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+valid_model_any_y,bool,0,0.0,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+valid_model_both_y,bool,0,0.0,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+water_occurrence,float64,0,0.0,source units require verified product provenance,Original JRC v1.4 outputs; original distances retained only for audit; use corrected1km flags for inference
+water_seasonality,float64,0,0.0,source units require verified product provenance,Original JRC v1.4 outputs; original distances retained only for audit; use corrected1km flags for inference
+water_transition,float64,0,0.0,source units require verified product provenance,Original JRC v1.4 outputs; original distances retained only for audit; use corrected1km flags for inference
+is_perm_water,float64,0,0.0,source units require verified product provenance,Original JRC v1.4 outputs; original distances retained only for audit; use corrected1km flags for inference
+is_seasonal_water,float64,0,0.0,source units require verified product provenance,Original JRC v1.4 outputs; original distances retained only for audit; use corrected1km flags for inference
+is_any_water,float64,0,0.0,source units require verified product provenance,Original JRC v1.4 outputs; original distances retained only for audit; use corrected1km flags for inference
+dist_perm_water_km,float64,0,0.0,"km label in original panel; physically inconsistent, correction pending",Original JRC v1.4 outputs; original distances retained only for audit; use corrected1km flags for inference
+dist_seasonal_water_km,float64,0,0.0,"km label in original panel; physically inconsistent, correction pending",Original JRC v1.4 outputs; original distances retained only for audit; use corrected1km flags for inference
+dist_any_water_km,float64,0,0.0,"km label in original panel; physically inconsistent, correction pending",Original JRC v1.4 outputs; original distances retained only for audit; use corrected1km flags for inference
+HDSI,float64,6374,0.0260902311036159,source units require verified product provenance,(summer_VPD_z + summer_LST_Day_z - summer_SM_rootproxy_z - summer_Precip_z) / 4
+water_dist_band,category,0,0.0,source units require verified product provenance,Original JRC v1.4 outputs; original distances retained only for audit; use corrected1km flags for inference
+near_water_0p5km,int64,0,0.0,source units require verified product provenance,Original JRC v1.4 outputs; original distances retained only for audit; use corrected1km flags for inference
+near_water_1km,int64,0,0.0,source units require verified product provenance,Original JRC v1.4 outputs; original distances retained only for audit; use corrected1km flags for inference
+near_water_2km,int64,0,0.0,source units require verified product provenance,Original JRC v1.4 outputs; original distances retained only for audit; use corrected1km flags for inference
+water_context,str,0,0.0,source units require verified product provenance,Original JRC v1.4 outputs; original distances retained only for audit; use corrected1km flags for inference
+EVI_neg_z05,int64,0,0.0,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded
+LAI_neg_z05,int64,0,0.0,source units require verified product provenance,Supplied analysis export; field-level dtype/missingness recorded

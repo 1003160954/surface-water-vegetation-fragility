@@ -1,0 +1,27 @@
+table,source_path,description
+S1,experiments/E00_original_reproduction/data_dictionary.csv,Data dictionary
+S2,experiments/E00_original_reproduction/sample_flow.csv,Sample selection
+S3,experiments/E00_original_reproduction/original_cell59_exact_comparison.csv,Exact original reproduction
+S4,experiments/E00_original_reproduction/manuscript_code_discrepancies.csv,Manuscript-code audit
+S5,experiments/E00_original_reproduction/context_fragility.csv,Grid-bootstrap fragility
+S6,experiments/E00_original_reproduction/fine_distance_fragility.csv,Centroid distance support
+S7,experiments/E02_confounding/harmonized/M2_AFB.csv,Harmonized covariate adjustment
+S8,experiments/E02_confounding/harmonized/common_landscape_AFB.csv,Comparable landscape strata
+S9,experiments/E02_confounding/harmonized/covariate_balance.csv,Covariate balance
+S10,experiments/E03_independent_baseline/existing_climatology_audit.csv,Existing baseline counts
+S11,experiments/E04_robustness/HDSI_variant_AFB.csv,HDSI variants
+S12,experiments/E04_robustness/event_threshold_AFB.csv,Event thresholds
+S13,experiments/E04_robustness/leave_analysis_year_out_AFB.csv,Leave analysis year out
+S14,experiments/E04_robustness/spatial_block_AFB.csv,Spatial block bootstrap
+S15,experiments/E04_robustness/Morans_I.csv,Spatial autocorrelation
+S16,experiments/E04_robustness/spline_predictions.csv,Spline curves and pointwise intervals
+S17,experiments/E00_original_reproduction/regional_context_exposure_counts.csv,Regional sample support
+S18,experiments/E01_spatial_support/pilot_distance_AFB.csv,Regional spatial-support pilot; includes not estimable contrasts
+S19,experiments/E01_spatial_support/corrected_1km/AFB.csv,Corrected1km AFB
+S20,experiments/E01_spatial_support/corrected_1km/context_reclassification_grid.csv,Physical context reclassification
+S21,experiments/E01_spatial_support/corrected_1km/harmonized/M2_AFB.csv,Corrected1km harmonized adjustment
+S22,experiments/E01_spatial_support/corrected_1km/harmonized/common_landscape_AFB.csv,Corrected1km landscape comparison
+S23,experiments/E01_spatial_support/corrected_1km/robustness/spatial_block_AFB.csv,Corrected1km spatial blocks
+S24,experiments/E01_spatial_support/corrected_1km/robustness/HDSI_variant_AFB.csv,Corrected1km HDSI variants
+S25,experiments/E01_spatial_support/corrected_1km/robustness/event_threshold_AFB.csv,Corrected1km event thresholds
+S26,experiments/E01_spatial_support/corrected_1km/robustness/leave_analysis_year_out_AFB.csv,Corrected1km leave analysis year out

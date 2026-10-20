@@ -1,0 +1,4 @@
+response,converged,n_parameters,rank,condition_number
+EVI,True,32,32,173.65705312561238
+LAI,True,32,32,173.65705312561238
+combined,True,32,32,173.65705312561238

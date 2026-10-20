@@ -1,0 +1,13 @@
+{
+  "formula": "high * context + elevation + slope + lon + lat + lon^2 + lat^2 + lon*lat + annual_temperature + log1p(annual_precipitation) + C(2018_grid_modal_landcover) + C(year)",
+  "covariate_scaling": "continuous predictors centered and scaled in complete-case low/high fit sample",
+  "landcover": "new 2018 MCD12Q1.061 native categories aggregated by spatial mode, not original averaged category codes",
+  "climate": "WorldClim v1 1960-1990 independent long-term background; not event-anomaly reference",
+  "uncertainty": "grid-cluster sandwich conditional on empirical standardization distribution; cross-grid spatial dependence remains",
+  "residual_uncontrolled": [
+    "irrigation",
+    "groundwater",
+    "soil properties"
+  ],
+  "distance_inputs": "corrected 30m UTM1km contexts; excluded2018 modal classes12and14"
+}

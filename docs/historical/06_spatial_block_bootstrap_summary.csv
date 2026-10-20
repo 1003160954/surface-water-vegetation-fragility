@@ -1,0 +1,8 @@
+﻿near_permanent_fragility,near_seasonal_fragility,AFB_near_seasonal_vs_near_permanent,other_weak_fragility,AFB_other_weak_vs_near_permanent,response,bootstrap,near_permanent_fragility_ci_low,near_permanent_fragility_ci_high,near_seasonal_fragility_ci_low,near_seasonal_fragility_ci_high,other_weak_fragility_ci_low,other_weak_fragility_ci_high,AFB_near_seasonal_vs_near_permanent_ci_low,AFB_near_seasonal_vs_near_permanent_ci_high,AFB_other_weak_vs_near_permanent_ci_low,AFB_other_weak_vs_near_permanent_ci_high
+0.11768938851367969,0.08624376336421952,-0.03144562514946017,,,EVI,point_estimate,,,,,,,,,,
+,,,,,EVI,spatial_block_bootstrap_CI,0.06567985593694371,0.17044055691448884,-0.08031143109345691,0.22268452380952372,,,-0.19488678501515577,0.12224118816619402,,
+0.1268590088086512,0.19339510572582563,0.06653609691717444,,,LAI,point_estimate,,,,,,,,,,
+,,,,,LAI,spatial_block_bootstrap_CI,0.08581231001446665,0.16649243983728831,0.061265453296703305,0.3288163897034865,,,-0.07273374394312469,0.202123111988364,,
+0.14840748187884867,0.1530054644808743,0.004597982602025624,,,Joint,point_estimate,,,,,,,,,,
+,,,,,Joint,spatial_block_bootstrap_CI,0.09898020460296236,0.20010032857107535,-0.013043455787488821,0.30976680021310893,,,-0.14554508119137263,0.1743855009609123,,
+

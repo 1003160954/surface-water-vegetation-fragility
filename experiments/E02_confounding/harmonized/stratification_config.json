@@ -1,0 +1,28 @@
+{
+  "strata": "LC2018 categorical grid mode x MAT tertile x annual precipitation tertile x elevation tertile",
+  "cuts": {
+    "climate_annual_temp_C": [
+      -Infinity,
+      4.713194450625716,
+      13.812982198927177,
+      Infinity
+    ],
+    "climate_annual_precip_mm": [
+      -Infinity,
+      483.17129629629716,
+      884.0810185185204,
+      Infinity
+    ],
+    "elevation": [
+      -Infinity,
+      400.8352689036233,
+      1292.0465608465609,
+      Infinity
+    ]
+  },
+  "minimum_support": "10 grid-years in each context/exposure cell, 5 unique grids per context",
+  "standardization_weights": "unique-grid counts pooled across both contexts within each retained stratum; shared across 4 exposure/context cells",
+  "bootstrap": "300 paired grid resamples on fixed retained strata and fixed stratum weights; no silent renormalization for empty bootstrap cells",
+  "quantiles": "HDSI quartiles on available covariate sample before restriction to permanent and seasonal",
+  "caution": "within-stratum residual confounding remains; original distance grouping"
+}

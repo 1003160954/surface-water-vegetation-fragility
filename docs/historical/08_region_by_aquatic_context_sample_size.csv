@@ -1,0 +1,12 @@
+﻿region_id,aquatic_context_main,n_grid_year,n_unique_grid,n_low_HDSI,n_mid_HDSI,n_high_HDSI,mean_dist_perm_km,EVI_event_rate,LAI_event_rate,Joint_event_rate,insufficient_flag,interpretation
+R_5_2,near_permanent,245,53,59,132,54,1.0711547018879886,0.1836734693877551,0.15918367346938775,0.23673469387755103,True,exploratory_or_insufficient_sample
+R_5_2,near_seasonal,5,1,1,4,0,6.768308503607086,0.0,0.0,0.0,True,exploratory_or_insufficient_sample
+R_5_3,near_permanent,224,54,37,140,47,1.3206432496962286,0.25,0.19196428571428573,0.29464285714285715,True,exploratory_or_insufficient_sample
+R_6_1,near_permanent,993,250,213,556,224,0.8013823221072441,0.15911379657603222,0.16012084592145015,0.2769385699899295,False,sufficient_for_main_regional_summary
+R_6_1,near_seasonal,16,5,2,12,2,6.3089021341603,0.0625,0.1875,0.1875,True,exploratory_or_insufficient_sample
+R_6_2,near_permanent,8810,1680,2265,4381,2164,0.9265794174010293,0.21691259931895573,0.1608399545970488,0.2859250851305335,False,sufficient_for_main_regional_summary
+R_6_2,near_seasonal,205,36,44,116,45,5.9545373206125465,0.16097560975609757,0.16585365853658537,0.24390243902439024,True,exploratory_or_insufficient_sample
+R_6_3,near_permanent,3019,697,767,1408,844,1.0407603917584436,0.2073534282875124,0.2053660152368334,0.29082477641603177,False,sufficient_for_main_regional_summary
+R_6_3,near_seasonal,87,23,14,51,22,6.873845457796472,0.26436781609195403,0.2413793103448276,0.2988505747126437,True,exploratory_or_insufficient_sample
+R_6_4,near_permanent,7,2,1,5,1,1.8104782021215138,0.2857142857142857,0.14285714285714285,0.2857142857142857,True,exploratory_or_insufficient_sample
+

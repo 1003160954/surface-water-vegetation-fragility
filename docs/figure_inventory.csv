@@ -1,0 +1,35 @@
+figure,path,scope
+Fig1_workflow,revised_figures/figures/Fig1_workflow.png,Current main corrected evidence
+Fig2_JRC_attributes,revised_figures/figures/Fig2_JRC_attributes.png,Current main corrected evidence
+Fig3_corrected_contexts,revised_figures/figures/Fig3_corrected_contexts.png,Current main corrected evidence
+Fig4_exposure_risks,revised_figures/figures/Fig4_exposure_risks.png,Current main corrected evidence
+Fig5_context_fragility,revised_figures/figures/Fig5_context_fragility.png,Current main corrected evidence
+Fig6_corrected_contrasts,revised_figures/figures/Fig6_corrected_contrasts.png,Current main corrected evidence
+Fig7_landscape_contrasts,revised_figures/figures/Fig7_landscape_contrasts.png,Current main corrected evidence
+Fig8_spatial_uncertainty,revised_figures/figures/Fig8_spatial_uncertainty.png,Current main corrected evidence
+SFig18_distance_validation,revised_figures/figures/SFig18_distance_validation.png,Current main corrected evidence
+SFig12_noncrop_sensitivity,reviewer_evidence/figures/SFig12_noncrop_sensitivity.png,Additional corrected sensitivity/diagnostics
+SFig13_corrected_balance,reviewer_evidence/figures/SFig13_corrected_balance.png,Additional corrected sensitivity/diagnostics
+SFig14_corrected_HDSI,reviewer_evidence/figures/SFig14_corrected_HDSI.png,Additional corrected sensitivity/diagnostics
+SFig15_corrected_thresholds,reviewer_evidence/figures/SFig15_corrected_thresholds.png,Additional corrected sensitivity/diagnostics
+SFig16_corrected_year_omissions,reviewer_evidence/figures/SFig16_corrected_year_omissions.png,Additional corrected sensitivity/diagnostics
+SFig17_sample_flow,reviewer_evidence/figures/SFig17_sample_flow.png,Additional corrected sensitivity/diagnostics
+Fig1_verified_workflow,figures/Fig1_verified_workflow.png,Historical/reproduction audit (SFig9–11 corrected)
+Fig2_JRC_metrics_discrete_transition,figures/Fig2_JRC_metrics_discrete_transition.png,Historical/reproduction audit (SFig9–11 corrected)
+Fig3_context_and_combined_events,figures/Fig3_context_and_combined_events.png,Historical/reproduction audit (SFig9–11 corrected)
+Fig4_HDSI_and_event_risks,figures/Fig4_HDSI_and_event_risks.png,Historical/reproduction audit (SFig9–11 corrected)
+Fig5_numeric_distance_bands,figures/Fig5_numeric_distance_bands.png,Historical/reproduction audit (SFig9–11 corrected)
+Fig6_context_risk_and_fragility,figures/Fig6_context_risk_and_fragility.png,Historical/reproduction audit (SFig9–11 corrected)
+Fig7_exploratory_diagnostics,figures/Fig7_exploratory_diagnostics.png,Historical/reproduction audit (SFig9–11 corrected)
+Fig8_all_regions_with_support,figures/Fig8_all_regions_with_support.png,Historical/reproduction audit (SFig9–11 corrected)
+SFig10_corrected_1km_spatial_blocks,figures/SFig10_corrected_1km_spatial_blocks.png,Historical/reproduction audit (SFig9–11 corrected)
+SFig11_corrected_1km_context_map,figures/SFig11_corrected_1km_context_map.png,Historical/reproduction audit (SFig9–11 corrected)
+SFig1_same_sample_adjustment,figures/SFig1_same_sample_adjustment.png,Historical/reproduction audit (SFig9–11 corrected)
+SFig2_spatial_block_uncertainty,figures/SFig2_spatial_block_uncertainty.png,Historical/reproduction audit (SFig9–11 corrected)
+SFig3_HDSI_variants,figures/SFig3_HDSI_variants.png,Historical/reproduction audit (SFig9–11 corrected)
+SFig4_event_thresholds,figures/SFig4_event_thresholds.png,Historical/reproduction audit (SFig9–11 corrected)
+SFig5_leave_analysis_year_out,figures/SFig5_leave_analysis_year_out.png,Historical/reproduction audit (SFig9–11 corrected)
+SFig6_centroid_distance_spline,figures/SFig6_centroid_distance_spline.png,Historical/reproduction audit (SFig9–11 corrected)
+SFig7_within_cell_pilot,figures/SFig7_within_cell_pilot.png,Historical/reproduction audit (SFig9–11 corrected)
+SFig8_harmonized_and_landscape,figures/SFig8_harmonized_and_landscape.png,Historical/reproduction audit (SFig9–11 corrected)
+SFig9_corrected_1km_permanence,figures/SFig9_corrected_1km_permanence.png,Historical/reproduction audit (SFig9–11 corrected)

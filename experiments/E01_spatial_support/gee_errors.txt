@@ -1,0 +1,18 @@
+main original: Too many pixels in the region bounded by Rectangle(115.5,28.999999999999968, 115.6,29.09999999999997).
+Found 618750, but only 300000 pixels are allowed.
+Ensure that you are not aggregating at a higher resolution than you intended; that is a frequent cause of this error.
+main shift_NE_0p05: Too many pixels in the region bounded by Rectangle(115.55,29.04999999999997, 115.64999999999999,29.14999999999997).
+Found 615230, but only 300000 pixels are allowed.
+Ensure that you are not aggregating at a higher resolution than you intended; that is a frequent cause of this error.
+moderate original: Too many pixels in the region bounded by Rectangle(115.5,28.999999999999968, 115.6,29.09999999999997).
+Found 618750, but only 300000 pixels are allowed.
+Ensure that you are not aggregating at a higher resolution than you intended; that is a frequent cause of this error.
+moderate shift_NE_0p05: Too many pixels in the region bounded by Rectangle(115.55,29.04999999999997, 115.64999999999999,29.14999999999997).
+Found 615230, but only 300000 pixels are allowed.
+Ensure that you are not aggregating at a higher resolution than you intended; that is a frequent cause of this error.
+strict original: Too many pixels in the region bounded by Rectangle(115.5,28.999999999999968, 115.6,29.09999999999997).
+Found 618750, but only 300000 pixels are allowed.
+Ensure that you are not aggregating at a higher resolution than you intended; that is a frequent cause of this error.
+strict shift_NE_0p05: Too many pixels in the region bounded by Rectangle(115.55,29.04999999999997, 115.64999999999999,29.14999999999997).
+Found 615230, but only 300000 pixels are allowed.
+Ensure that you are not aggregating at a higher resolution than you intended; that is a frequent cause of this error.

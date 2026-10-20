@@ -1,0 +1,4 @@
+numeric_distance,n_matching,n_total,fraction_matching
+dist_perm_water_km,22230,236995,0.09379944724572248
+dist_seasonal_water_km,169070,236995,0.7133905778602924
+dist_any_water_km,236995,236995,1.0

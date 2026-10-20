@@ -1,0 +1,9 @@
+{
+  "basis": "cubic B-spline on log1p distance, 5 df, no basis intercept; intercept and high indicator separate",
+  "patsy_design": "DesignInfo(['bs(z, df=5, degree=3, include_intercept=False, lower_bound=0, upper_bound=upper)[0]', 'bs(z, df=5, degree=3, include_intercept=False, lower_bound=0, upper_bound=upper)[1]', 'bs(z, df=5, degree=3, include_intercept=False, lower_bound=0, upper_bound=upper)[2]', 'bs(z, df=5, degree=3, include_intercept=False, lower_bound=0, upper_bound=upper)[3]', 'bs(z, df=5, degree=3, include_intercept=False, lower_bound=0, upper_bound=upper)[4]'], factor_infos={EvalFactor('bs(z, df=5, degree=3, include_intercept=False, lower_bound=0, upper_bound=upper)'): FactorInfo(factor=EvalFactor('bs(z, df=5, degree=3, include_intercept=False, lower_bound=0, upper_bound=upper)'), type='numerical', state=<factor state>, num_columns=5)}, term_codings=OrderedDict({Term([EvalFactor('bs(z, df=5, degree=3, include_intercept=False, lower_bound=0, upper_bound=upper)')]): [SubtermInfo(factors=(EvalFactor('bs(z, df=5, degree=3, include_intercept=False, lower_bound=0, upper_bound=upper)'),), contrast_matrices={}, num_columns=5)]}))",
+  "formula": "high * bs(log1p(distance),df=5) + elevation + slope + lon + lat + lon^2 + lat^2 + lon*lat + year fixed effects",
+  "standardization": "full observed low/high sample common covariate distribution",
+  "CI": "95% pointwise grid-cluster sandwich delta method",
+  "landcover": "omitted invalid fractional codes",
+  "interpretation": "descriptive centroid-context association; no ecological reach or causal mechanism inferred"
+}

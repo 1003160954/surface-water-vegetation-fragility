@@ -1,0 +1,8 @@
+response,contrast,AFB,ci_low,ci_high
+EVI,far_or_weak fragility - near_permanent fragility,0.04637762468956695,0.012773758665062416,0.079490677040188
+EVI,near_seasonal fragility - near_permanent fragility,0.03975415308581943,0.02966226831351643,0.04959838117219007
+LAI,far_or_weak fragility - near_permanent fragility,0.05454947762225406,0.02022209748907449,0.08789183321380858
+LAI,near_seasonal fragility - near_permanent fragility,0.04913305687045873,0.039891826429448524,0.05857300319280053
+Joint,far_or_weak fragility - near_permanent fragility,0.04620032552381609,0.00983215801552685,0.08246765354012084
+Joint,near_seasonal fragility - near_permanent fragility,0.04888304541046341,0.03800926342253937,0.06073236205364789
+

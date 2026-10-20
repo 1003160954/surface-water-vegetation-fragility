@@ -1,0 +1,79 @@
+{
+  "created_utc": "2026-10-20T05:32:33.393589+00:00",
+  "status": "submitted, outputs not yet validated",
+  "occurrence": 80,
+  "seasonality": 10,
+  "resolution_m": 30,
+  "distance_search_km": 61.44,
+  "mask": "ESA WorldCover2021 vegetated classes10,20,30,40,90,95,100; exclude all JRC occurrence>0",
+  "alignment": "original .1 degree; full shifted-response alignment not performed",
+  "required_qc": "distance_supported_area / vegetation_area >= .999 before treating mean distance as uncensored; report excluded coverage",
+  "tasks": [
+    {
+      "zone": 43,
+      "n_grid": 227,
+      "task_id": "EFGMRDYYRQMKUCWIYBQQU4X6",
+      "description": "E01_within_cell_20261020_UTM43"
+    },
+    {
+      "zone": 44,
+      "n_grid": 676,
+      "task_id": "KAYIIF5IGERBICIPE4F3JDS4",
+      "description": "E01_within_cell_20261020_UTM44"
+    },
+    {
+      "zone": 45,
+      "n_grid": 1102,
+      "task_id": "2LHGY3IGCR5HQQR3H26DMH4Q",
+      "description": "E01_within_cell_20261020_UTM45"
+    },
+    {
+      "zone": 46,
+      "n_grid": 1918,
+      "task_id": "4MXL34CJ6KMGQZE5BEDG2U5H",
+      "description": "E01_within_cell_20261020_UTM46"
+    },
+    {
+      "zone": 47,
+      "n_grid": 5711,
+      "task_id": "ITOST2S5N6GBBTNJNFYLEOYO",
+      "description": "E01_within_cell_20261020_UTM47"
+    },
+    {
+      "zone": 48,
+      "n_grid": 7422,
+      "task_id": "JMCSD5JONVQW3DIGOH73ILLY",
+      "description": "E01_within_cell_20261020_UTM48"
+    },
+    {
+      "zone": 49,
+      "n_grid": 10785,
+      "task_id": "H454IINYN5NC2SOTB36UMH6I",
+      "description": "E01_within_cell_20261020_UTM49"
+    },
+    {
+      "zone": 50,
+      "n_grid": 12183,
+      "task_id": "IC4ZNVOC4SYLRIDJZ2DHUM7H",
+      "description": "E01_within_cell_20261020_UTM50"
+    },
+    {
+      "zone": 51,
+      "n_grid": 6406,
+      "task_id": "UDNTZAB256IGAG5WHHRMYW4L",
+      "description": "E01_within_cell_20261020_UTM51"
+    },
+    {
+      "zone": 52,
+      "n_grid": 2181,
+      "task_id": "MF2M6UXSXEBP5JZOKNIIVLUT",
+      "description": "E01_within_cell_20261020_UTM52"
+    },
+    {
+      "zone": 53,
+      "n_grid": 232,
+      "task_id": "A6DRFXXK7LPEZIPYU2AH3CHL",
+      "description": "E01_within_cell_20261020_UTM53"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+use,product,period,official_reference_or_source,attribution_and_caution
+JRC surface water,JRC/GSW1_4/GlobalSurfaceWater,1984-2021 summary,https://developers.google.com/earth-engine/datasets/catalog/JRC_GSW1_4_GlobalSurfaceWater,EC JRC/Google; Copernicus acknowledgement required
+Vegetation distance support,ESA/WorldCover/v200,2021,https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCover_v200,ESA WorldCover; source-specific attribution and license
+Harmonized land cover,MODIS/061/MCD12Q1,2018,https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD12Q1,NASA LP DAAC
+Long-term background climate covariates,WORLDCLIM/V1/MONTHLY,1960-1990,https://developers.google.com/earth-engine/datasets/catalog/WORLDCLIM_V1_MONTHLY,Hijmans etal2005; CC-BY-SA4.0 per catalog
+Original EVI/LAI/LST/ERA5 extraction,Unverified source GEE collection IDs,Analysis2018-2023,original upstream processing notebook,Do not infer missing versions from product family names

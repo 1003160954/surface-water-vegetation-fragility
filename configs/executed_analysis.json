@@ -1,0 +1,41 @@
+{
+  "seed": 20261020,
+  "grid_bootstrap_draws": 300,
+  "spatial_block_degrees": [
+    1,
+    2,
+    5
+  ],
+  "spatial_block_origin": [
+    0,
+    0
+  ],
+  "main_filter": "valid_model_both_y",
+  "event_z_threshold": -0.5,
+  "combined_event": "EVI OR LAI",
+  "HDSI": "(summer_VPD_z+summer_LST_Day_z-summer_SM_rootproxy_z-summer_Precip_z)/4",
+  "original_actual_water_threshold": [
+    80,
+    10
+  ],
+  "manuscript_water_threshold": [
+    80,
+    9
+  ],
+  "original_notebook": "recovered; docs/original_sources/",
+  "season_midpoint_DOY": {
+    "spring": [
+      60,
+      151
+    ],
+    "summer": [
+      152,
+      243
+    ],
+    "late_summer": [
+      213,
+      273
+    ]
+  },
+  "historical_AI_note": "original source contains explicit ChatGPT authorship comments; origin of original illustrations is not established"
+}

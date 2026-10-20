@@ -1,0 +1,7 @@
+{
+  "comparison": "seasonal minus permanent",
+  "before": "all corrected permanent/seasonal grids",
+  "after": "unique grids with low/high observations in46 retained common strata, pooled-grid stratum weights shared across contexts",
+  "SMD": "difference in weighted means / sqrt(mean of two weighted descriptive variances)",
+  "warning": "before/after target populations differ; coarse strata do not guarantee all covariates balanced; no irrigation/groundwater/soil balance can be claimed"
+}

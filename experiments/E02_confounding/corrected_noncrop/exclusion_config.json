@@ -1,0 +1,27 @@
+{
+  "excluded_landcover_classes": [
+    12,
+    14
+  ],
+  "landcover_product": "2018 MODIS/061/MCD12Q1 grid spatial mode",
+  "before": {
+    "n_rows": 236995,
+    "n_grids": 48843
+  },
+  "after": {
+    "n_rows": 172463,
+    "n_grids": 36238
+  },
+  "HDSI_cutpoints_fixed_to_full_sample": [
+    -0.2974858281280519,
+    0.2882174368150908
+  ],
+  "purpose": "agricultural-composition sensitivity, not identification of irrigation-free vegetation",
+  "remaining_confounding": [
+    "irrigation outside mapped classes",
+    "groundwater",
+    "soil",
+    "water management"
+  ],
+  "GEE_jobs_submitted": 0
+}

@@ -1,0 +1,19 @@
+{
+  "file_name": "china_aquatic_buffering_panel_v2.parquet",
+  "bytes": 197155434,
+  "sha256": "ac59b4fe362ce7663df7d5f4b72525b069351ddd4f97fb783e5ab0fbab881a28",
+  "level": "supplied exported analysis panel, not original satellite observations",
+  "raw_rows": 244306,
+  "raw_grids": 55418,
+  "duplicate_grid_year_keys": 0,
+  "sample_selection": "valid_model_both_y",
+  "selected_grids_for_worked_examples": [
+    "g_116.35_32.35",
+    "g_101.55_26.25",
+    "g_111.45_24.75",
+    "g_107.75_31.55",
+    "g_123.35_47.75",
+    "g_113.25_34.85"
+  ],
+  "example_selection": "two unique grids per corrected context, pandas random_state20261020,20261021,20261022; illustrative, not inference sample"
+}

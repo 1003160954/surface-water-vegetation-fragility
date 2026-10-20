@@ -1,0 +1,4 @@
+response,converged,rank,n_columns,n_model,condition_number
+EVI,True,18,18,118498,40.427609972108904
+LAI,True,18,18,118498,40.427609972108904
+combined,True,18,18,118498,40.427609972108904

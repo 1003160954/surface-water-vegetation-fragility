@@ -1,0 +1,62 @@
+{
+  "checks": [
+    {
+      "check": "all nine context risks reconstruct from integer event counts",
+      "pass_": true
+    },
+    {
+      "check": "all context fragilities reconstruct",
+      "pass_": true
+    },
+    {
+      "check": "six AFB arithmetic contrasts match",
+      "pass_": true
+    },
+    {
+      "check": "worked examples have six unique grids",
+      "pass_": true
+    },
+    {
+      "check": "worked HDSI formula exact",
+      "pass_": true
+    },
+    {
+      "check": "worked EVI/LAI events and OR exact",
+      "pass_": true
+    },
+    {
+      "check": "noncrop fits converge and full rank",
+      "pass_": true
+    },
+    {
+      "check": "noncrop has fixed national thresholds",
+      "pass_": true
+    },
+    {
+      "check": "heavy pause remains in place",
+      "pass_": true
+    },
+    {
+      "check": "no Word documents in public tree",
+      "pass_": true
+    },
+    {
+      "check": "no manuscript working-draft authoring sources",
+      "pass_": true
+    },
+    {
+      "check": "all public Python source files parse",
+      "pass_": true
+    },
+    {
+      "check": "README relative links resolve",
+      "pass_": true
+    },
+    {
+      "check": "34 distinct available figures are indexed",
+      "pass_": true
+    }
+  ],
+  "scope": "public code and derived evidence only; no authoring drafts or raw large exports",
+  "broken_links": []
+}

@@ -1,0 +1,8 @@
+﻿group_var,group,HDSI_variant,target,n_total,n_grid,n_low,n_high,risk_low,risk_high,fragility_increase,response,JRC_threshold_scenario,distance_column
+tmp_near_permanent,near_permanent,HDSI_equal,EVI_stress_event_z0p5,8553,1761,2172,2157,0.1841620626151013,0.28280018544274454,0.09863812282764325,EVI,main_existing,dist_perm_water_km
+tmp_near_permanent,other_weak,HDSI_equal,EVI_stress_event_z0p5,5058,1040,1231,1246,0.148659626320065,0.29775280898876405,0.14909318266869906,EVI,main_existing,dist_perm_water_km
+tmp_near_permanent,near_permanent,HDSI_equal,LAI_stress_event_z0p5,8553,1761,2172,2157,0.11602209944751381,0.23968474733426054,0.12366264788674673,LAI,main_existing,dist_perm_water_km
+tmp_near_permanent,other_weak,HDSI_equal,LAI_stress_event_z0p5,5058,1040,1231,1246,0.12103980503655565,0.2568218298555377,0.13578202481898205,LAI,main_existing,dist_perm_water_km
+tmp_near_permanent,near_permanent,HDSI_equal,Joint_stress_event_z0p5,8553,1761,2172,2157,0.23296500920810312,0.3676402410755679,0.1346752318674648,Joint,main_existing,dist_perm_water_km
+tmp_near_permanent,other_weak,HDSI_equal,Joint_stress_event_z0p5,5058,1040,1231,1246,0.20552396425670186,0.3780096308186196,0.17248566656191774,Joint,main_existing,dist_perm_water_km
+

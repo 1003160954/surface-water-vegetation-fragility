@@ -1,0 +1,14 @@
+metric,value
+rows,236995
+unique_grids,48843
+years,"2018,2019,2020,2021,2022,2023"
+HDSI_Q25,-0.2974858281280519
+HDSI_Q75,0.2882174368150908
+EVI_neg_rate,0.20539251882951118
+LAI_neg_rate,0.1888056710057174
+joint_failure_rate,0.28047427160910565
+dist_perm_mean_km,2.1677741358792586
+dist_perm_median_km,1.590283
+dist_perm_p90_km,4.806745
+dist_perm_max_km,15.676543
+

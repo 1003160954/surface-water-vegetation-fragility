@@ -1,0 +1,8 @@
+﻿response,comparison,AFB,ci_low,ci_high
+EVI,near_seasonal,-0.0314456251494601,-0.1948867850151557,0.122241188166194
+EVI,other_weak,,,
+LAI,near_seasonal,0.0665360969171744,-0.0727337439431246,0.202123111988364
+LAI,other_weak,,,
+Joint,near_seasonal,0.0045979826020256,-0.1455450811913726,0.1743855009609123
+Joint,other_weak,,,
+

@@ -1,0 +1,340 @@
+<!doctype html><meta charset="utf-8"><title>Reproducibility evidence guide</title><style>body{max-width:1150px;margin:35px auto;font:16px Arial;line-height:1.65;padding:0 24px}table{border-collapse:collapse;font-size:12px}td,th{border:1px solid #ddd;padding:8px;vertical-align:top}img{max-width:100%}h1,h2{color:#111}</style><h1>Evidence from source tables to quantitative figures</h1><p>This guide accompanies the full reviewer response. It documents actual computations, including outcomes that support and limit the buffering interpretation. It does not establish whether prose was AI-assisted; AI assistance is disclosed separately. Original satellite-to-panel provenance is incomplete.</p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>step</th>
+      <th>operation</th>
+      <th>evidence</th>
+      <th>executed_result_or_boundary</th>
+      <th>code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>01</td>
+      <td>Original data products</td>
+      <td>docs/data_sources.csv; reviewer_evidence/all_panel_fields_dictionary.csv</td>
+      <td>Known JRC/land-cover/climate/pilot products; original vegetation/thermal IDs partly unresolved</td>
+      <td>gee/; docs/original_sources/upstream_seasonal_source_only.ipynb</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td>Supplied raw analysis export</td>
+      <td>logs/E00_manifest.json; reviewer_evidence/raw_input_manifest.json</td>
+      <td>244306 grid-years,55418grids; no duplicate grid-year keys</td>
+      <td>src/audit_pipeline.py</td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td>Validity and seasonal anomaly recipe</td>
+      <td>experiments/E00_original_reproduction/sample_flow.csv</td>
+      <td>236995 rows,48843grids; at most6 annual observations per seasonal position</td>
+      <td>docs/original_sources/upstream_seasonal_source_only.ipynb</td>
+    </tr>
+    <tr>
+      <td>04</td>
+      <td>Stress and event assignments</td>
+      <td>reviewer_evidence/worked_grid_year_examples.csv</td>
+      <td>HDSI four-component mean; Q25/Q75; EVI/LAI&lt;-.5; OR event</td>
+      <td>src/audit_pipeline.py</td>
+    </tr>
+    <tr>
+      <td>05</td>
+      <td>Corrected aquatic contexts</td>
+      <td>experiments/E01_spatial_support/national_corrected_1km_contexts.csv</td>
+      <td>2549permanent,15262seasonal,31032other; 17056-grid binary check zero mismatches</td>
+      <td>gee/corrected_near_contexts.py</td>
+    </tr>
+    <tr>
+      <td>06</td>
+      <td>Event risk and fragility</td>
+      <td>reviewer_evidence/risk_numerators_and_arithmetic.csv; reviewer_evidence/AFB_arithmetic.csv</td>
+      <td>Integer event counts / denominators -&gt; high-low risk -&gt; signed context contrast</td>
+      <td>src/audit_pipeline.py; src/analyze_corrected_1km.py</td>
+    </tr>
+    <tr>
+      <td>07</td>
+      <td>Measured-confounder adjustment</td>
+      <td>experiments/E01_spatial_support/corrected_1km/harmonized/</td>
+      <td>M0/M1 same eligible sample; M2 common-covariate predictions,grid-cluster delta95%CI</td>
+      <td>src/harmonized_confounding.py; src/analyze_corrected_1km.py</td>
+    </tr>
+    <tr>
+      <td>08</td>
+      <td>Landscape and agricultural sensitivity</td>
+      <td>reviewer_evidence/corrected_covariate_balance.csv; experiments/E02_confounding/corrected_noncrop/</td>
+      <td>46strata; excludes crop/mosaic in additional analysis; no full irrigation control claimed</td>
+      <td>src/common_landscape.py; src/reviewer_noncrop.py</td>
+    </tr>
+    <tr>
+      <td>09</td>
+      <td>Robustness and spatial uncertainty</td>
+      <td>experiments/E01_spatial_support/corrected_1km/robustness/</td>
+      <td>10 indices,4 thresholds,6 analysis-year omissions,1/2/5degree blocks; all scenarios retained</td>
+      <td>src/robustness.py; src/analyze_corrected_1km.py</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Quantitative visualizations</td>
+      <td>manuscript_revision/figure_source_map.csv; reviewer_evidence/figure_source_map.csv</td>
+      <td>Main8 figures plus corrected support plots; raw tables retained; no AI image generation</td>
+      <td>src/revision_figures.py; src/build_reviewer_evidence.py</td>
+    </tr>
+  </tbody>
+</table><h2>Every main risk estimate can be recomputed from integer counts</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>context</th>
+      <th>response</th>
+      <th>n_context_rows</th>
+      <th>n_context_grids</th>
+      <th>low_events</th>
+      <th>low_n</th>
+      <th>high_events</th>
+      <th>high_n</th>
+      <th>risk_low</th>
+      <th>risk_high</th>
+      <th>fragility</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>permanent</td>
+      <td>EVI</td>
+      <td>12259</td>
+      <td>2549</td>
+      <td>503</td>
+      <td>3080</td>
+      <td>891</td>
+      <td>3046</td>
+      <td>0.163312</td>
+      <td>0.292515</td>
+      <td>0.129203</td>
+    </tr>
+    <tr>
+      <td>permanent</td>
+      <td>LAI</td>
+      <td>12259</td>
+      <td>2549</td>
+      <td>343</td>
+      <td>3080</td>
+      <td>768</td>
+      <td>3046</td>
+      <td>0.111364</td>
+      <td>0.252134</td>
+      <td>0.140770</td>
+    </tr>
+    <tr>
+      <td>permanent</td>
+      <td>combined</td>
+      <td>12259</td>
+      <td>2549</td>
+      <td>661</td>
+      <td>3080</td>
+      <td>1141</td>
+      <td>3046</td>
+      <td>0.214610</td>
+      <td>0.374590</td>
+      <td>0.159979</td>
+    </tr>
+    <tr>
+      <td>seasonal</td>
+      <td>EVI</td>
+      <td>74835</td>
+      <td>15262</td>
+      <td>2725</td>
+      <td>19158</td>
+      <td>5792</td>
+      <td>18808</td>
+      <td>0.142238</td>
+      <td>0.307954</td>
+      <td>0.165716</td>
+    </tr>
+    <tr>
+      <td>seasonal</td>
+      <td>LAI</td>
+      <td>74835</td>
+      <td>15262</td>
+      <td>2158</td>
+      <td>19158</td>
+      <td>4981</td>
+      <td>18808</td>
+      <td>0.112642</td>
+      <td>0.264834</td>
+      <td>0.152192</td>
+    </tr>
+    <tr>
+      <td>seasonal</td>
+      <td>combined</td>
+      <td>74835</td>
+      <td>15262</td>
+      <td>3768</td>
+      <td>19158</td>
+      <td>7287</td>
+      <td>18808</td>
+      <td>0.196680</td>
+      <td>0.387442</td>
+      <td>0.190761</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>EVI</td>
+      <td>149901</td>
+      <td>31032</td>
+      <td>4976</td>
+      <td>37011</td>
+      <td>12138</td>
+      <td>37395</td>
+      <td>0.134447</td>
+      <td>0.324589</td>
+      <td>0.190142</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>LAI</td>
+      <td>149901</td>
+      <td>31032</td>
+      <td>4451</td>
+      <td>37011</td>
+      <td>11873</td>
+      <td>37395</td>
+      <td>0.120262</td>
+      <td>0.317502</td>
+      <td>0.197241</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>combined</td>
+      <td>149901</td>
+      <td>31032</td>
+      <td>7126</td>
+      <td>37011</td>
+      <td>15462</td>
+      <td>37395</td>
+      <td>0.192537</td>
+      <td>0.413478</td>
+      <td>0.220940</td>
+    </tr>
+  </tbody>
+</table><h2>Confounding reduction and remaining limits</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>factor</th>
+      <th>implemented</th>
+      <th>addresses</th>
+      <th>does_not_address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Different mean vegetation levels</td>
+      <td>grid x seasonal-position recent anomaly standardization</td>
+      <td>location/season mean and scale differences</td>
+      <td>different underlying sensitivities or unstable short references</td>
+    </tr>
+    <tr>
+      <td>Land-cover composition</td>
+      <td>categorical2018 grid modal land cover in M2</td>
+      <td>observed broad cover differences</td>
+      <td>within-class management or dynamic crop changes</td>
+    </tr>
+    <tr>
+      <td>Terrain and background climate</td>
+      <td>elevation,slope,WorldClim MAT/MAP,quadratic geography,year indicators</td>
+      <td>measured landscape and broad location differences</td>
+      <td>unobserved irrigation,groundwater,soil; guarantee of causal exchangeability</td>
+    </tr>
+    <tr>
+      <td>Comparable landscapes</td>
+      <td>46 supported LC x MAT/MAP/elevation-tertile strata; common weights</td>
+      <td>restricts to shared coarse settings</td>
+      <td>all within-stratum differences; different target population</td>
+    </tr>
+    <tr>
+      <td>Agricultural landscape contribution</td>
+      <td>exclude modal LCclasses12and14; fixed national HDSI cutpoints; refit M0/M1/M2</td>
+      <td>dependence on dominant cropland and mosaic classes</td>
+      <td>identifying irrigation-free or groundwater-independent land</td>
+    </tr>
+    <tr>
+      <td>Repeated years and neighbouring cells</td>
+      <td>paired grid resampling,cluster sandwich,1/2/5degree blocks</td>
+      <td>specified temporal-cluster and spatial resampling dependence</td>
+      <td>unmeasured confounding or established true spatial correlation range</td>
+    </tr>
+  </tbody>
+</table><h2>Additional agricultural exclusion results</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>comparison</th>
+      <th>response</th>
+      <th>AFB</th>
+      <th>ci_low</th>
+      <th>ci_high</th>
+      <th>n_total</th>
+      <th>n_model</th>
+      <th>n_grid</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>seasonal</td>
+      <td>EVI</td>
+      <td>0.048013</td>
+      <td>0.016996</td>
+      <td>0.079030</td>
+      <td>172463</td>
+      <td>82743</td>
+      <td>30212</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>EVI</td>
+      <td>0.048020</td>
+      <td>0.018750</td>
+      <td>0.077290</td>
+      <td>172463</td>
+      <td>82743</td>
+      <td>30212</td>
+    </tr>
+    <tr>
+      <td>seasonal</td>
+      <td>LAI</td>
+      <td>0.021772</td>
+      <td>-0.007124</td>
+      <td>0.050668</td>
+      <td>172463</td>
+      <td>82743</td>
+      <td>30212</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>LAI</td>
+      <td>0.032683</td>
+      <td>0.005419</td>
+      <td>0.059946</td>
+      <td>172463</td>
+      <td>82743</td>
+      <td>30212</td>
+    </tr>
+    <tr>
+      <td>seasonal</td>
+      <td>combined</td>
+      <td>0.040971</td>
+      <td>0.007997</td>
+      <td>0.073946</td>
+      <td>172463</td>
+      <td>82743</td>
+      <td>30212</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>combined</td>
+      <td>0.046929</td>
+      <td>0.015846</td>
+      <td>0.078012</td>
+      <td>172463</td>
+      <td>82743</td>
+      <td>30212</td>
+    </tr>
+  </tbody>
+</table><h2>SFig12_noncrop_sensitivity</h2><img src="figures/SFig12_noncrop_sensitivity.png"><p>E02/corrected_noncrop/M2_AFB.csv; full corrected1km harmonized/M2_AFB.csv</p><h2>SFig13_corrected_balance</h2><img src="figures/SFig13_corrected_balance.png"><p>reviewer_evidence/corrected_covariate_balance.csv; .1 line is a descriptive reference, not a validity threshold</p><h2>SFig14_corrected_HDSI</h2><img src="figures/SFig14_corrected_HDSI.png"><p>corrected1km/robustness/HDSI_variant_AFB.csv</p><h2>SFig15_corrected_thresholds</h2><img src="figures/SFig15_corrected_thresholds.png"><p>corrected1km/robustness/event_threshold_AFB.csv</p><h2>SFig16_corrected_year_omissions</h2><img src="figures/SFig16_corrected_year_omissions.png"><p>corrected1km/robustness/leave_analysis_year_out_AFB.csv</p><h2>SFig17_sample_flow</h2><img src="figures/SFig17_sample_flow.png"><p>E00/sample_flow.csv; no new filtering invented</p>

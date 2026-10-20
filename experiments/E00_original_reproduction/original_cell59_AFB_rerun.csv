@@ -1,0 +1,7 @@
+response,comparison,AFB,ci_low,ci_high,n_total,n_grid,bootstrap,seed,unit,point_estimator
+EVI,other,0.04637762468956695,0.012773758665062416,0.079490677040188,236995,48843,500,42,independent grid-year within context/exposure,mean of bootstrap contrasts
+EVI,seasonal,0.03975415308581943,0.02966226831351643,0.04959838117219007,236995,48843,500,42,independent grid-year within context/exposure,mean of bootstrap contrasts
+LAI,other,0.05454947762225406,0.02022209748907449,0.0878918332138086,236995,48843,500,42,independent grid-year within context/exposure,mean of bootstrap contrasts
+LAI,seasonal,0.04913305687045873,0.03989182642944854,0.05857300319280052,236995,48843,500,42,independent grid-year within context/exposure,mean of bootstrap contrasts
+combined,other,0.04620032552381609,0.00983215801552685,0.08246765354012084,236995,48843,500,42,independent grid-year within context/exposure,mean of bootstrap contrasts
+combined,seasonal,0.04888304541046341,0.03800926342253937,0.06073236205364789,236995,48843,500,42,independent grid-year within context/exposure,mean of bootstrap contrasts

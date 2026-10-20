@@ -1,0 +1,5 @@
+﻿scenario,occurrence_threshold,seasonality_threshold,n_centroid_permanent_water,share_centroid_permanent_water
+moderate_occ75_seas8,75,8,1301,0.09558445375064287
+main_occ80_seas9,80,9,1014,0.07449856733524356
+strict_occ90_seas10,90,10,543,0.03989420321798545
+

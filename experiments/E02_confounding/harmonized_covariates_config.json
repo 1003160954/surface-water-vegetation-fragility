@@ -1,0 +1,11 @@
+{
+  "landcover": "MODIS/061/MCD12Q1, 2018 LC_Type1, grid mode of native500m categories",
+  "background_climate": "WORLDCLIM/V1/MONTHLY; 1960-1990; mean annual temperature, sum of monthly precipitation",
+  "aggregation": "native class mode and continuous spatial means to EPSG4326 .1degree origin (-180,90), aligned to original grid centers",
+  "missing_export_value": -9999,
+  "interpretation": "new confounding sensitivity; does not replace independent anomaly baseline",
+  "source_urls": [
+    "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD12Q1",
+    "https://developers.google.com/earth-engine/datasets/catalog/WORLDCLIM_V1_MONTHLY"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "seed": 20261020,
+  "bootstrap": 300,
+  "block_sizes_degrees": [
+    1,
+    2,
+    5
+  ],
+  "block_origin_lon_lat": [
+    0,
+    0
+  ],
+  "block_grid": "floor(lon/size), floor(lat/size)",
+  "block_size_warning": "degrees imply latitude-varying physical size; sensitivity, not estimated decorrelation range",
+  "quantiles": "recomputed per variant and per leave-year-out sample; held fixed across bootstrap draws",
+  "PCA": "PC1 of sample-standardized seasonal stress components, sign aligned with equal index",
+  "LOO": "analysis-year exclusion only, original anomaly baseline retained",
+  "permanence_threshold_AFB": "not run: alternative raster-derived distance surfaces unavailable"
+}

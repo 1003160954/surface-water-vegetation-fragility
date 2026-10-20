@@ -1,0 +1,19 @@
+{
+  "time_utc": "2026-10-20T05:54:33.592389+00:00",
+  "exports": [
+    {
+      "type": "centroid",
+      "n_files": 6,
+      "n_rows": 17056,
+      "expected_grids": 48843,
+      "complete": false
+    },
+    {
+      "type": "within_cell",
+      "n_files": 0,
+      "n_rows": 0,
+      "expected_grids": 48843,
+      "complete": false
+    }
+  ]
+}

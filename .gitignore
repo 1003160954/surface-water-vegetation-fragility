@@ -1,0 +1,13 @@
+data/raw/
+__pycache__/
+*.pyc
+.venv/
+.env
+credentials*
+*.parquet
+
+*.docx
+*.pdf.tmp
+manuscript_revision*/
+work/
+logs/private/

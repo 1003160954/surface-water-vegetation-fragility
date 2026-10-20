@@ -1,0 +1,26 @@
+﻿section,finding,value
+Data,Analytical sample,"13,611 grid-year observations; 2,801 unique grids; 2018–2023"
+Data,Main event rates,EVI=0.210; LAI=0.172; Joint=0.285
+Data,Distance to permanent water,mean=1.07 km; median=0.65 km; p90=2.64 km; max=13.65 km
+HDSI robustness,PCA-HDSI loadings,PC1 explained variance ratio=0.743; loadings: stress_VPD_std=0.542; stress_LST_std=0.426; stress_SMdef_std=0.524; stress_PrecipDef_std=0.501
+Covariate adjustment,"Adjusted AFB for EVI, near_seasonal vs near permanent",0.253
+Covariate adjustment,"Adjusted AFB for EVI, other_weak vs near permanent",0.000
+Covariate adjustment,"Adjusted AFB for LAI, near_seasonal vs near permanent",0.064
+Covariate adjustment,"Adjusted AFB for LAI, other_weak vs near permanent",0.000
+Covariate adjustment,"Adjusted AFB for Joint, near_seasonal vs near permanent",-0.379
+Covariate adjustment,"Adjusted AFB for Joint, other_weak vs near permanent",0.000
+Spatial dependence,Moran's I for EVI_rate,I=0.176; approximate p=0.005; n=2801
+Spatial dependence,Moran's I for LAI_rate,I=0.219; approximate p=0.005; n=2801
+Spatial dependence,Moran's I for Joint_rate,I=0.137; approximate p=0.005; n=2801
+Spatial dependence,Moran's I for HDSI_mean,I=0.047; approximate p=0.010; n=2801
+Spatial block bootstrap,"Point AFB for EVI, other/weak vs near permanent",nan
+Spatial block bootstrap,"Spatial-block CI for EVI, other/weak AFB",nan to nan
+Spatial block bootstrap,"Point AFB for LAI, other/weak vs near permanent",nan
+Spatial block bootstrap,"Spatial-block CI for LAI, other/weak AFB",nan to nan
+Spatial block bootstrap,"Point AFB for Joint, other/weak vs near permanent",nan
+Spatial block bootstrap,"Spatial-block CI for Joint, other/weak AFB",nan to nan
+Regional sample size,Region × aquatic-context combinations flagged as exploratory,7/10
+JRC threshold sensitivity,Centroid permanent-water share under moderate_occ75_seas8,0.0956 (1301 grid-year records)
+JRC threshold sensitivity,Centroid permanent-water share under main_occ80_seas9,0.0745 (1014 grid-year records)
+JRC threshold sensitivity,Centroid permanent-water share under strict_occ90_seas10,0.0399 (543 grid-year records)
+

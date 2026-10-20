@@ -1,0 +1,5 @@
+variable,Morans_I,p_permutation_two_sided,n_grid,k,graph,permutations,seed,interpretation
+HDSI,0.2062147263709963,0.005,48843,8,symmetric_binary_knn,199,20261020,grid means; HDSI mean near zero by construction
+EVI,0.335201423668754,0.005,48843,8,symmetric_binary_knn,199,20261020,grid means; HDSI mean near zero by construction
+LAI,0.36570879500243336,0.005,48843,8,symmetric_binary_knn,199,20261020,grid means; HDSI mean near zero by construction
+combined,0.2698216149143315,0.005,48843,8,symmetric_binary_knn,199,20261020,grid means; HDSI mean near zero by construction

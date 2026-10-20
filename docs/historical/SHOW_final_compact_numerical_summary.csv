@@ -1,0 +1,14 @@
+﻿Result,Core value
+Covariate-adjusted AFB: EVI near_seasonal,0.253
+Covariate-adjusted AFB: EVI other_weak,0.000
+Covariate-adjusted AFB: Joint near_seasonal,-0.379
+Covariate-adjusted AFB: Joint other_weak,0.000
+Covariate-adjusted AFB: LAI near_seasonal,0.064
+Covariate-adjusted AFB: LAI other_weak,0.000
+Spatial block-bootstrap AFB: EVI,"nan, CI=nan to nan"
+Spatial block-bootstrap AFB: LAI,"nan, CI=nan to nan"
+Spatial block-bootstrap AFB: Joint,"nan, CI=nan to nan"
+Nonlinear effective distance: EVI,0.00 km; fragility range=0.006 to 0.008
+Nonlinear effective distance: LAI,5.80 km; fragility range=-0.112 to -0.096
+Nonlinear effective distance: Joint,7.90 km; fragility range=-0.064 to -0.057
+

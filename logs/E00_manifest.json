@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-10-20T04:47:51.450401+00:00",
+  "input": "data/raw/china_aquatic_buffering_panel_v2.parquet",
+  "sha256": "ac59b4fe362ce7663df7d5f4b72525b069351ddd4f97fb783e5ab0fbab881a28",
+  "bytes": 197155434,
+  "rows_raw": 244306,
+  "rows_analysis": 236995,
+  "seed": 20261020,
+  "bootstrap": 300,
+  "original_notebook_found": false,
+  "method": "independent reconstruction; original notebook not available",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "historical_note": "Initial-run manifest, before source notebook recovery. Current recovered-source status is documented in docs/REPRODUCIBILITY.md."
+}

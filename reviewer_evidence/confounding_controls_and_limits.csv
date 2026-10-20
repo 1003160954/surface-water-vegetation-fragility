@@ -1,0 +1,7 @@
+factor,implemented,addresses,does_not_address
+Different mean vegetation levels,grid x seasonal-position recent anomaly standardization,location/season mean and scale differences,different underlying sensitivities or unstable short references
+Land-cover composition,categorical2018 grid modal land cover in M2,observed broad cover differences,within-class management or dynamic crop changes
+Terrain and background climate,"elevation,slope,WorldClim MAT/MAP,quadratic geography,year indicators",measured landscape and broad location differences,"unobserved irrigation,groundwater,soil; guarantee of causal exchangeability"
+Comparable landscapes,46 supported LC x MAT/MAP/elevation-tertile strata; common weights,restricts to shared coarse settings,all within-stratum differences; different target population
+Agricultural landscape contribution,exclude modal LCclasses12and14; fixed national HDSI cutpoints; refit M0/M1/M2,dependence on dominant cropland and mosaic classes,identifying irrigation-free or groundwater-independent land
+Repeated years and neighbouring cells,"paired grid resampling,cluster sandwich,1/2/5degree blocks",specified temporal-cluster and spatial resampling dependence,unmeasured confounding or established true spatial correlation range

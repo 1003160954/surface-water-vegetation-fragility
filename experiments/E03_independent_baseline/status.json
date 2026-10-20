@@ -1,0 +1,61 @@
+{
+  "status": "blocked_independent_baseline",
+  "rows_grid_step": 1274614,
+  "unique_grids": 55418,
+  "steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "count_max": 6,
+  "reference_year_metadata_present": false,
+  "conclusion": "Existing reference counts at most six; no evidence of independent 2001-2017 reference. Must not relabel as long-term climatology.",
+  "original_product_versions_and_season_windows": "Seasons recovered from upstream notebook cell28; original GEE product versions remain unverified",
+  "sha256": "9d0787fc441bf50d7db92efa2717cced79e8ef51e00a1d122ffde052d96e587c",
+  "season_windows_midpoint_DOY": {
+    "spring": [
+      60,
+      151
+    ],
+    "summer": [
+      152,
+      243
+    ],
+    "late_summer": [
+      213,
+      273
+    ],
+    "autumn": [
+      244,
+      304
+    ]
+  },
+  "standardization": {
+    "ddof": 1,
+    "min_std": 1e-06,
+    "z_clip": [
+      -5,
+      5
+    ]
+  }
+}

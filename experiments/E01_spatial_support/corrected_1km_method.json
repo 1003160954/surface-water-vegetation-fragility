@@ -1,0 +1,10 @@
+{
+  "resolution_m": 30,
+  "projection": "UTM per6-degree zone, northern hemisphere",
+  "classification": "native JRC80%/10months; seasonal1<=months<10, nearest-neighbour metric projection",
+  "search_pixels": 64,
+  "search_m": 1920,
+  "reported_quantity": "boolean distance<=1000m only; no magnitude beyond search radius inferred",
+  "n_grid": 48843,
+  "scope": "centroid context correction; within-cell distance separate"
+}

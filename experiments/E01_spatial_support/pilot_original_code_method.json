@@ -1,0 +1,23 @@
+{
+  "status": "pilot only; not national E01 completion",
+  "region": "Poyang Lake surroundings; seeded sample of 24 existing analysis grids",
+  "grid_size_degrees": 0.1,
+  "alignments": [
+    0,
+    0.05
+  ],
+  "classification": "JRC occurrence and seasonality native source grid, nearest neighbour metric reproject 30m",
+  "thresholds": {
+    "original_code_main": [
+      80,
+      10
+    ]
+  },
+  "threshold_warning": "Recovered original code uses80/10; manuscript80/9 tested separately",
+  "vegetation_support": "ESA WorldCover v200 2021 classes 10,20,30,40,90,95,100; exclude any JRC occurrence >0",
+  "metric_crs": "EPSG:32650",
+  "distance_search_m": 30720,
+  "mask_note": "mean distance only valid when vegetation_distance_coverage approx 1",
+  "alignment_limit": "shifted metric supports only; vegetation/climate responses not reaggregated so this is not a completed alignment sensitivity of AFB",
+  "seed": 20261020
+}
