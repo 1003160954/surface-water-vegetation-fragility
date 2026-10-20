@@ -9,3 +9,11 @@ for ax,e in zip(axs,['EVI','LAI','combined']):
 fig.suptitle('Corrected aquatic contexts; paired grid-bootstrap95%intervals');fig.tight_layout()
 for ext in ['png','pdf']:fig.savefig(O/'figures'/('Fig5_context_fragility.'+ext),dpi=200,bbox_inches='tight')
 plt.close(fig)
+
+import shutil
+for ext in ['png','pdf']:
+ old=O/'figures'/('Fig5_distance_audit.'+ext)
+ if old.exists():shutil.copy2(old,O/'figures'/('SFig18_distance_validation.'+ext))
+mapping=O/'figure_source_map.csv'
+if mapping.exists():
+ t=pd.read_csv(mapping);mask=t.figure.eq('Fig5_distance_audit');t.loc[mask,'figure']='Fig5_context_fragility';t.loc[mask,'sources']='experiments/E01_spatial_support/corrected_1km/context_fragility.csv; source calculation audit retained as SFig18';t.to_csv(mapping,index=False)
