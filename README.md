@@ -1,5 +1,7 @@
 # Surface water permanence and vegetation fragility
 
+Project repository: https://github.com/1003160954/surface-water-vegetation-fragility
+
 可复核的水体背景与植被干热风险分析 / Reproducible analysis of aquatic context and vegetation risk amplification across China, 2018–2023.
 
 本仓库公开**代码、数据来源说明、派生结果表和可视化**。论文与审稿回复工作稿不在公开范围内；大规模原始导出表不直接存入Git。结果来自真实分析，图形由数值表与绘图程序生成。使用过的AI辅助另行如实披露；“可复现”不等于“没有使用AI”，也不等于没有研究局限。
