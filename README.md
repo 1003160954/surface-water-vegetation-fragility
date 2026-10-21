@@ -1,32 +1,27 @@
 # Surface water permanence and vegetation fragility
 
-Reproducible analysis of aquatic context and vegetation risk amplification under compound heat and dryness across China, 2018–2023.
+Reproducible analysis of vegetation risk amplification under compound heat and dryness across China, 2018–2023.
 
-This repository provides analysis code, data-source documentation, derived numerical tables and visualizations. Large analysis exports are stored separately; manuscript and reviewer-response working drafts are not included. Quantitative figures are generated from recorded numerical outputs. AI assistance is disclosed separately where applicable.
+The [final analysis package](final_results/README.md) contains the current numerical results, figure files, full uncertainty outputs, and executable plotting code. It supersedes earlier displayed figure versions; earlier experiment outputs remain available for provenance. The research design compares mapped aquatic contexts, broad centroid-distance associations, component exposure, seasonal canopy change, and regional contrasts.
 
-## Research question and principal results
+## Principal findings
 
-Is vegetation risk amplification under summer heat and dryness weaker in permanent-water landscape contexts? Fragility is the event probability under high heat–dryness exposure minus the probability under low exposure. Events represent negative vegetation-index anomalies relative to a recent local seasonal reference, rather than mortality or permanent vegetation loss.
+- The national analysis includes 236,995 grid-years from 48,843 cells. Permanent, seasonal, and other contexts contain 2,549, 15,262, and 31,032 cells.
+- Permanent-context fragility is 0.1292 (EVI), 0.1408 (LAI), and 0.1600 (combined events), compared with 0.1901, 0.1972, and 0.2209 in other contexts.
+- The seasonal-minus-permanent EVI contrast is supported after measured-covariate adjustment and common-landscape restriction. LAI permanence evidence is weaker. All national 5° spatial-block contrast intervals include zero.
+- Broad distance-related increases occur in the geographically restricted distance subset; they do not establish a shoreline protection radius.
+- Regional LAI contrasts are positive in Southwest and South China and negative in East China. Mean high-stress seasonal LAI change is similar in permanent and other contexts.
+- Excluding each evaluated year from its anomaly reference retains positive permanent-versus-other contrasts in paired analyses, but event agreement is 91.3% for EVI, 89.5% for LAI and 87.2% for combined events. Classification is therefore not baseline-invariant.
 
-- The main sample contains 236,995 grid-year records from 48,843 cells at 0.1° resolution. Corrected permanent, seasonal and other contexts contain 2,549, 15,262 and 31,032 cells, respectively.
-- Permanent-context fragility is 0.1292 for EVI, 0.1408 for LAI and 0.1600 for the combined event. Corresponding other-context estimates are 0.1901, 0.1972 and 0.2209. Integer event counts and denominators are provided in the [risk arithmetic table](reviewer_evidence/risk_numerators_and_arithmetic.csv).
-- Other-minus-permanent contrasts retain positive grid-cluster intervals for all three responses after measured-covariate adjustment and exclusion of dominant agricultural cover. Evidence for permanent versus seasonal water is clearest for EVI; LAI remains uncertain, and combined-event evidence depends on the target population and uncertainty treatment.
-- At 1° and 2° spatial block sizes, all three other-minus-permanent contrasts and the seasonal-minus-permanent EVI contrast retain intervals above zero. At 5°, all unadjusted contrast intervals include zero. All scales are reported together.
+## Current figures
 
-These are observational buffering associations. A 1 km grid-centroid context does not identify a protection radius for vegetation within the cell or establish a causal hydrological mechanism.
+![Methodological workflow](final_results/figures/Fig1.png)
+![Aquatic contexts and vegetation events](final_results/figures/Fig3.png)
+![Distance association](final_results/figures/Fig5.png)
+![Aquatic-context risks and fragility](final_results/figures/Fig6.png)
+![Regional contrasts](final_results/figures/Fig8.png)
 
-### Adjusted contrasts using corrected contexts
-
-AFB = fragility(comparison) − fragility(permanent). Positive values indicate weaker risk amplification in permanent-water contexts. Units are absolute probability differences. Estimates use a common empirical covariate distribution; intervals use grid-cluster sandwich covariance and the delta method, separately from the spatial-block analysis.
-
-| Comparison | Response | Adjusted AFB | 95% interval |
-| --- | --- | --- | --- |
-| Seasonal − permanent | EVI | 0.0378 | [0.0126, 0.0630] |
-| Other − permanent | EVI | 0.0664 | [0.0421, 0.0908] |
-| Seasonal − permanent | LAI | 0.0079 | [-0.0155, 0.0314] |
-| Other − permanent | LAI | 0.0412 | [0.0186, 0.0638] |
-| Seasonal − permanent | combined | 0.0323 | [0.0054, 0.0591] |
-| Other − permanent | combined | 0.0667 | [0.0407, 0.0926] |
+All [main and supplementary graphics](final_results/figures/) are available as PNG and PDF; the workflow has an editable PowerPoint source. The [final package guide](final_results/README.md) describes regeneration and maps the evidence files to analyses. Figures use numerical data and deterministic plotting scripts. AI assistance in revision included programming and language support, not generated observations.
 
 ## From data to results
 
@@ -43,7 +38,8 @@ The [computation guide](docs/COMPUTATION_STEPS.md) specifies inputs, transformat
 | 7 | Adjust for measured covariates | experiments/E01_spatial_support/corrected_1km/harmonized/ | src/harmonized_confounding.py; src/analyze_corrected_1km.py |
 | 8 | Assess landscape and agricultural composition | reviewer_evidence/corrected_covariate_balance.csv; experiments/E02_confounding/corrected_noncrop/ | src/common_landscape.py; src/reviewer_noncrop.py |
 | 9 | Evaluate sensitivity and spatial uncertainty | experiments/E01_spatial_support/corrected_1km/robustness/ | src/robustness.py; src/analyze_corrected_1km.py |
-| 10 | Generate quantitative figures | revised_figures/figure_source_map.csv; reviewer_evidence/figure_source_map.csv | src/revision_figures.py; src/plot_corrected_fragility.py; src/build_reviewer_evidence.py |
+| 10 | Recalculate target-year-excluded anomalies | final_results/data/baseline/ | src/final_release/baseline_crossfit.py |
+| 11 | Generate quantitative figures | final_results/figure_source_map.csv | src/final_release/plot_final_figures.py |
 
 ### Worked AFB calculation
 
@@ -72,243 +68,145 @@ Within the restricted, commonly weighted landscape sample, absolute descriptive 
 
 Excluding 2018 modal cropland class 12 and cropland/natural-vegetation mosaic class 14 leaves 172,463 records from 36,238 grids. The adjusted model fits 82,743 low/high-HDSI records from 30,212 grids, retaining national exposure cutpoints. Seasonal-minus-permanent AFB is 0.0480 [0.0170, 0.0790] for EVI, 0.0410 [0.0080, 0.0739] for combined events and 0.0218 [−0.0071, 0.0507] for LAI. All three other-minus-permanent intervals remain above zero; see [full estimates](experiments/E02_confounding/corrected_noncrop/M2_AFB.csv). This restriction reduces dominant agricultural-composition differences but does not identify irrigation-free vegetation. Groundwater, soil properties, irrigation outside these classes and dynamic management remain unmeasured.
 
-## Figures
 
+## Complete figure gallery
 
-### Main figures using corrected aquatic contexts
+### Fig1
 
-#### Fig1_workflow — Workflow and calculation framework
+![Fig1](final_results/figures/Fig1.png)
 
-![Workflow and calculation framework](revised_figures/figures/Fig1_workflow.png)
+[PDF](final_results/figures/Fig1.pdf)
 
-[PDF](revised_figures/figures/Fig1_workflow.pdf) · [Main-figure source map](revised_figures/figure_source_map.csv)
+### Fig2
 
-#### Fig2_JRC_attributes — JRC occurrence, seasonality and categorical transitions
+![Fig2](final_results/figures/Fig2.png)
 
-![JRC occurrence, seasonality and categorical transitions](revised_figures/figures/Fig2_JRC_attributes.png)
+[PDF](final_results/figures/Fig2.pdf)
 
-[PDF](revised_figures/figures/Fig2_JRC_attributes.pdf) · [Main-figure source map](revised_figures/figure_source_map.csv)
+### Fig3
 
-#### Fig3_corrected_contexts — Corrected national contexts and combined-event spatial distribution
+![Fig3](final_results/figures/Fig3.png)
 
-![Corrected national contexts and combined-event spatial distribution](revised_figures/figures/Fig3_corrected_contexts.png)
+[PDF](final_results/figures/Fig3.pdf)
 
-[PDF](revised_figures/figures/Fig3_corrected_contexts.pdf) · [Main-figure source map](revised_figures/figure_source_map.csv)
+### Fig4
 
-#### Fig4_exposure_risks — Spatial distribution of heat–dryness exposure and event risks
+![Fig4](final_results/figures/Fig4.png)
 
-![Spatial distribution of heat–dryness exposure and event risks](revised_figures/figures/Fig4_exposure_risks.png)
+[PDF](final_results/figures/Fig4.pdf)
 
-[PDF](revised_figures/figures/Fig4_exposure_risks.pdf) · [Main-figure source map](revised_figures/figure_source_map.csv)
+### Fig5
 
-#### Fig5_context_fragility — Vegetation risk amplification across the three contexts
+![Fig5](final_results/figures/Fig5.png)
 
-![Vegetation risk amplification across the three contexts](revised_figures/figures/Fig5_context_fragility.png)
+[PDF](final_results/figures/Fig5.pdf)
 
-[PDF](revised_figures/figures/Fig5_context_fragility.pdf) · [Main-figure source map](revised_figures/figure_source_map.csv)
+### Fig6
 
-#### Fig6_corrected_contrasts — Unadjusted and adjusted AFB estimates with intervals
+![Fig6](final_results/figures/Fig6.png)
 
-![Unadjusted and adjusted AFB estimates with intervals](revised_figures/figures/Fig6_corrected_contrasts.png)
+[PDF](final_results/figures/Fig6.pdf)
 
-[PDF](revised_figures/figures/Fig6_corrected_contrasts.pdf) · [Main-figure source map](revised_figures/figure_source_map.csv)
+### Fig7
 
-#### Fig7_landscape_contrasts — Permanent versus seasonal contexts within supported landscapes
+![Fig7](final_results/figures/Fig7.png)
 
-![Permanent versus seasonal contexts within supported landscapes](revised_figures/figures/Fig7_landscape_contrasts.png)
+[PDF](final_results/figures/Fig7.pdf)
 
-[PDF](revised_figures/figures/Fig7_landscape_contrasts.pdf) · [Main-figure source map](revised_figures/figure_source_map.csv)
+### Fig8
 
-#### Fig8_spatial_uncertainty — Results for all 1°, 2° and 5° spatial blocks
+![Fig8](final_results/figures/Fig8.png)
 
-![Results for all 1°, 2° and 5° spatial blocks](revised_figures/figures/Fig8_spatial_uncertainty.png)
+[PDF](final_results/figures/Fig8.pdf)
 
-[PDF](revised_figures/figures/Fig8_spatial_uncertainty.pdf) · [Main-figure source map](revised_figures/figure_source_map.csv)
+### Fig_S1
 
-### Additional corrected results and diagnostics
+![Fig_S1](final_results/figures/Fig_S1.png)
 
-#### SFig12_noncrop_sensitivity
+[PDF](final_results/figures/Fig_S1.pdf)
 
-![SFig12_noncrop_sensitivity](reviewer_evidence/figures/SFig12_noncrop_sensitivity.png)
+### Fig_S10
 
-[PDF](reviewer_evidence/figures/SFig12_noncrop_sensitivity.pdf) · [Numerical sources](reviewer_evidence/figure_source_map.csv)
+![Fig_S10](final_results/figures/Fig_S10.png)
 
-#### SFig13_corrected_balance
+[PDF](final_results/figures/Fig_S10.pdf)
 
-![SFig13_corrected_balance](reviewer_evidence/figures/SFig13_corrected_balance.png)
+### Fig_S11
 
-[PDF](reviewer_evidence/figures/SFig13_corrected_balance.pdf) · [Numerical sources](reviewer_evidence/figure_source_map.csv)
+![Fig_S11](final_results/figures/Fig_S11.png)
 
-#### SFig14_corrected_HDSI
+[PDF](final_results/figures/Fig_S11.pdf)
 
-![SFig14_corrected_HDSI](reviewer_evidence/figures/SFig14_corrected_HDSI.png)
+### Fig_S12
 
-[PDF](reviewer_evidence/figures/SFig14_corrected_HDSI.pdf) · [Numerical sources](reviewer_evidence/figure_source_map.csv)
+![Fig_S12](final_results/figures/Fig_S12.png)
 
-#### SFig15_corrected_thresholds
+[PDF](final_results/figures/Fig_S12.pdf)
 
-![SFig15_corrected_thresholds](reviewer_evidence/figures/SFig15_corrected_thresholds.png)
+### Fig_S13
 
-[PDF](reviewer_evidence/figures/SFig15_corrected_thresholds.pdf) · [Numerical sources](reviewer_evidence/figure_source_map.csv)
+![Fig_S13](final_results/figures/Fig_S13.png)
 
-#### SFig16_corrected_year_omissions
+[PDF](final_results/figures/Fig_S13.pdf)
 
-![SFig16_corrected_year_omissions](reviewer_evidence/figures/SFig16_corrected_year_omissions.png)
+### Fig_S2
 
-[PDF](reviewer_evidence/figures/SFig16_corrected_year_omissions.pdf) · [Numerical sources](reviewer_evidence/figure_source_map.csv)
+![Fig_S2](final_results/figures/Fig_S2.png)
 
-#### SFig17_sample_flow
+[PDF](final_results/figures/Fig_S2.pdf)
 
-![SFig17_sample_flow](reviewer_evidence/figures/SFig17_sample_flow.png)
+### Fig_S3
 
-[PDF](reviewer_evidence/figures/SFig17_sample_flow.pdf) · [Numerical sources](reviewer_evidence/figure_source_map.csv)
+![Fig_S3](final_results/figures/Fig_S3.png)
 
-### Original-result reproduction and historical distance checks
+[PDF](final_results/figures/Fig_S3.pdf)
 
-These figures document historical grouping, distance calculations and algorithms. They explain the original numerical results; **historical kilometre curves do not establish ecological reach and do not replace the corrected results above**. SFig9–11 show supplementary results using the corrected 1 km classification. See the source maps for each figure’s scope.
+### Fig_S4
 
-<details>
-<summary>Expand reproduction checks and spatial figures</summary>
+![Fig_S4](final_results/figures/Fig_S4.png)
 
-**Fig1_verified_workflow**
+[PDF](final_results/figures/Fig_S4.pdf)
 
-![Fig1_verified_workflow](figures/Fig1_verified_workflow.png)
+### Fig_S5
 
-[PDF](figures/Fig1_verified_workflow.pdf)
+![Fig_S5](final_results/figures/Fig_S5.png)
 
-**Fig2_JRC_metrics_discrete_transition**
+[PDF](final_results/figures/Fig_S5.pdf)
 
-![Fig2_JRC_metrics_discrete_transition](figures/Fig2_JRC_metrics_discrete_transition.png)
+### Fig_S6_adjusted_contrasts
 
-[PDF](figures/Fig2_JRC_metrics_discrete_transition.pdf)
+![Fig_S6_adjusted_contrasts](final_results/figures/Fig_S6_adjusted_contrasts.png)
 
-**Fig3_context_and_combined_events**
+[PDF](final_results/figures/Fig_S6_adjusted_contrasts.pdf)
 
-![Fig3_context_and_combined_events](figures/Fig3_context_and_combined_events.png)
+### Fig_S7_common_landscapes
 
-[PDF](figures/Fig3_context_and_combined_events.pdf)
+![Fig_S7_common_landscapes](final_results/figures/Fig_S7_common_landscapes.png)
 
-**Fig4_HDSI_and_event_risks**
+[PDF](final_results/figures/Fig_S7_common_landscapes.pdf)
 
-![Fig4_HDSI_and_event_risks](figures/Fig4_HDSI_and_event_risks.png)
+### Fig_S8_covariate_balance
 
-[PDF](figures/Fig4_HDSI_and_event_risks.pdf)
+![Fig_S8_covariate_balance](final_results/figures/Fig_S8_covariate_balance.png)
 
-**Fig5_numeric_distance_bands**
+[PDF](final_results/figures/Fig_S8_covariate_balance.pdf)
 
-![Fig5_numeric_distance_bands](figures/Fig5_numeric_distance_bands.png)
+### Fig_S9_noncropland
 
-[PDF](figures/Fig5_numeric_distance_bands.pdf)
+![Fig_S9_noncropland](final_results/figures/Fig_S9_noncropland.png)
 
-**Fig6_context_risk_and_fragility**
+[PDF](final_results/figures/Fig_S9_noncropland.pdf)
 
-![Fig6_context_risk_and_fragility](figures/Fig6_context_risk_and_fragility.png)
+## Reproduction
 
-[PDF](figures/Fig6_context_risk_and_fragility.pdf)
+Install `requirements.txt`, then run `python src/final_release/plot_final_figures.py` from the repository root. This reconstructs all quantitative final plots from the published derived CSV files without submitting Earth Engine tasks. The methods flowchart is supplied as an editable PowerPoint file.
 
-**Fig7_exploratory_diagnostics**
+For the target-year-excluded anomaly experiment, set `RAW_CORE_PANEL` to the patched 16-day source panel and `AQUATIC_PANEL` to the seasonal analysis panel, then run `python src/final_release/baseline_crossfit.py`. The [final package guide](final_results/README.md) identifies every evidence directory. The [figure source map](final_results/figure_source_map.csv) links figures to numerical inputs.
 
-![Fig7_exploratory_diagnostics](figures/Fig7_exploratory_diagnostics.png)
+The [computation guide](docs/COMPUTATION_STEPS.md) documents earlier model-reproduction entry points. Historical files are retained for provenance; the numbered figures in `final_results/figures` are the current manuscript set. Heavy exports remain paused. The independent long-reference and national within-cell/grid-realignment experiments have not been completed. Exact upstream product and quality-mask gaps are documented in the source inventory rather than inferred from variable names.
 
-[PDF](figures/Fig7_exploratory_diagnostics.pdf)
+Summer (DOY 152–243) and late summer (DOY 213–273), assigned by 16-day midpoints, overlap on DOY 213–243. The exposure–response association is partly concurrent. Positive point estimates alone do not establish causality; spatial uncertainty is reported across all tested block sizes.
 
-**Fig8_all_regions_with_support**
+## Public files
 
-![Fig8_all_regions_with_support](figures/Fig8_all_regions_with_support.png)
-
-[PDF](figures/Fig8_all_regions_with_support.pdf)
-
-**SFig10_corrected_1km_spatial_blocks**
-
-![SFig10_corrected_1km_spatial_blocks](figures/SFig10_corrected_1km_spatial_blocks.png)
-
-[PDF](figures/SFig10_corrected_1km_spatial_blocks.pdf)
-
-**SFig11_corrected_1km_context_map**
-
-![SFig11_corrected_1km_context_map](figures/SFig11_corrected_1km_context_map.png)
-
-[PDF](figures/SFig11_corrected_1km_context_map.pdf)
-
-**SFig1_same_sample_adjustment**
-
-![SFig1_same_sample_adjustment](figures/SFig1_same_sample_adjustment.png)
-
-[PDF](figures/SFig1_same_sample_adjustment.pdf)
-
-**SFig2_spatial_block_uncertainty**
-
-![SFig2_spatial_block_uncertainty](figures/SFig2_spatial_block_uncertainty.png)
-
-[PDF](figures/SFig2_spatial_block_uncertainty.pdf)
-
-**SFig3_HDSI_variants**
-
-![SFig3_HDSI_variants](figures/SFig3_HDSI_variants.png)
-
-[PDF](figures/SFig3_HDSI_variants.pdf)
-
-**SFig4_event_thresholds**
-
-![SFig4_event_thresholds](figures/SFig4_event_thresholds.png)
-
-[PDF](figures/SFig4_event_thresholds.pdf)
-
-**SFig5_leave_analysis_year_out**
-
-![SFig5_leave_analysis_year_out](figures/SFig5_leave_analysis_year_out.png)
-
-[PDF](figures/SFig5_leave_analysis_year_out.pdf)
-
-**SFig6_centroid_distance_spline**
-
-![SFig6_centroid_distance_spline](figures/SFig6_centroid_distance_spline.png)
-
-[PDF](figures/SFig6_centroid_distance_spline.pdf)
-
-**SFig7_within_cell_pilot**
-
-![SFig7_within_cell_pilot](figures/SFig7_within_cell_pilot.png)
-
-[PDF](figures/SFig7_within_cell_pilot.pdf)
-
-**SFig8_harmonized_and_landscape**
-
-![SFig8_harmonized_and_landscape](figures/SFig8_harmonized_and_landscape.png)
-
-[PDF](figures/SFig8_harmonized_and_landscape.pdf)
-
-**SFig9_corrected_1km_permanence**
-
-![SFig9_corrected_1km_permanence](figures/SFig9_corrected_1km_permanence.png)
-
-[PDF](figures/SFig9_corrected_1km_permanence.pdf)
-
-</details>
-
-Independent native-pixel distance checks are provided in[Supplementary distance validation](revised_figures/figures/SFig18_distance_validation.png). All available figures, numerical sources, analysis scopes and scripts are indexed in [FIGURE_GALLERY.md](docs/FIGURE_GALLERY.md). Only figures supported by available numerical outputs are included.
-
-## Local reproduction
-
-Use Python 3.12; recorded dependency versions are listed in [requirements.txt](requirements.txt). Large input tables are stored outside Git. Set `AQUATIC_PANEL` and, when needed, `AQUATIC_CLIMATOLOGY` to the supplied analysis exports. Access to these inputs is separate from access to this repository. Public derived tables support arithmetic checks and selected figure reconstruction; they do not by themselves support an independent reconstruction from raw imagery through every model.
-
-```text
-python -m pip install -r requirements.txt
-# Set AQUATIC_PANEL and optionally AQUATIC_CLIMATOLOGY in your shell.
-python src/original_exact.py
-python src/analyze_corrected_1km.py
-python src/reviewer_noncrop.py
-python src/build_reviewer_evidence.py
-python src/revision_figures.py
-python src/plot_corrected_fragility.py
-python tests/validate_evidence.py
-python tests/validate_public_evidence.py
-```
-
-`revision_figures.py` reconstructs the earlier main-figure layout, including the historical Fig. 5 distance check. `plot_corrected_fragility.py` creates the current Fig. 5 context comparison. Both are retained with distinct sources. The [computation guide](docs/COMPUTATION_STEPS.md) documents the historical reproduction entry points and expected outputs. Reproduction does not require resubmitting Earth Engine exports; heavy export tasks remain paused.
-
-Summer (DOY 152–243) and late summer (DOY 213–273) are assigned using 16-day step midpoints and overlap on DOY 213–243. The exposure–response association is partly concurrent. Intervals containing zero do not establish equivalence, and positive point estimates alone do not establish robustness or causality. Spatial uncertainty should be read across all reported block sizes. Detailed provenance and analysis scope are documented in [REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
-
-## Repository contents
-
-The public repository contains research code, source metadata and derived evidence. It excludes manuscript and response drafts, Word documents, large input tables, credentials and private local repository history. Source-only notebooks are archived in [docs/original_sources](docs/original_sources). The initial input-discovery manifest records its historical execution state; recovered sources are described in the reproducibility documentation. File identities are recorded in [public_manifest.csv](public_manifest.csv).
+This repository contains research code, source metadata and derived evidence. Manuscript and reviewer-response documents, large input panels, credentials and private local files remain outside this public release. The [manifest](final_results/manifest.csv) records hashes of the final derived files. Access to original input panels is separate from access to this repository.

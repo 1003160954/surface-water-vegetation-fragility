@@ -1,0 +1,17 @@
+[
+  {
+    "path": "work\\data\\china_aquatic_buffering_panel_v2.parquet",
+    "bytes": 197155434,
+    "sha256": "ac59b4fe362ce7663df7d5f4b72525b069351ddd4f97fb783e5ab0fbab881a28"
+  },
+  {
+    "path": "outputs\\surface-water-vegetation-fragility\\experiments\\E01_spatial_support\\centroid_export_received.csv",
+    "bytes": 1911172,
+    "sha256": "54cfab317f11bdd9970fadacbdb2da5eff99dd960186815d7f5c1a2396fafee3"
+  },
+  {
+    "path": "outputs\\surface-water-vegetation-fragility\\experiments\\E02_confounding\\harmonized_landcover_climate_covariates.csv",
+    "bytes": 2706897,
+    "sha256": "2a950e9913729b9b00c1f2a04898b30677e898ce9e804f397c1159663c0847f9"
+  }
+]

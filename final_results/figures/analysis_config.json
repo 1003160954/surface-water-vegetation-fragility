@@ -1,0 +1,11 @@
+{
+  "national_q25": -0.2974858281280519,
+  "national_q75": 0.2882174368150908,
+  "bootstrap": 300,
+  "resampling": "paired grid cluster, all years retained",
+  "seed": 20261020,
+  "region_rule": "original assign_macro_region; coordinate/elevation rules, not administrative polygons",
+  "support_rule": "both context totals >=100 grid-years; all four low/high cells >=30; no effect-sign selection",
+  "causal_mediation": false,
+  "heavy_GEE_tasks": "remain paused"
+}

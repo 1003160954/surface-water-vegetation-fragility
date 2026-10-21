@@ -1,0 +1,78 @@
+{
+  "national_rows": 236995,
+  "national_grids": 48843,
+  "received_grids": 17056,
+  "received_zones": [
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "rows_before_range_filter": 80355,
+  "grids_before_range_filter": 17056,
+  "rows_in_range": 80265,
+  "grids_in_range": 17041,
+  "q25": -0.2974858281280519,
+  "q75": 0.2882174368150908,
+  "search_limit_km": 61.44,
+  "bootstrap": 300,
+  "seed": 20261020,
+  "heavy_tasks": "remain paused; no remote computation",
+  "partial_sample": "completed UTM exports, not random national sample",
+  "input_sha256": "54cfab317f11bdd9970fadacbdb2da5eff99dd960186815d7f5c1a2396fafee3",
+  "schemes": {
+    "fine": [
+      0,
+      0.25,
+      0.5,
+      1,
+      2,
+      3,
+      5,
+      7.5,
+      10,
+      15,
+      30,
+      61.44
+    ],
+    "coarse": [
+      0,
+      1,
+      5,
+      10,
+      20,
+      40,
+      61.44
+    ],
+    "grid_quintiles": [
+      0.0,
+      3.0240535709540595,
+      6.005772223453034,
+      10.152684374095356,
+      17.016136459255375,
+      61.44
+    ]
+  },
+  "model": "high * bs(log1p(corrected distance), df=5) + scaled lon + lat + elevation + slope + MAT + log1p(MAP) + lon^2 + lat^2 + lon*lat + C(year) + C(2018 modal landcover)",
+  "standardization": "common empirical covariate distribution in complete-case low/high subset",
+  "curve_range_5_95": [
+    0.8823264701911645,
+    32.150945553746936
+  ],
+  "model_block_counts": {
+    "grid": 14201,
+    "block_1deg": 397,
+    "block_2deg": 128,
+    "block_5deg": 31
+  },
+  "CI": "pointwise normal delta method, clustered sandwich; conditional on empirical standardization distribution",
+  "limitations": [
+    "partial nonrandom UTM coverage",
+    "centroid distances, not within-cell vegetation distances",
+    "no grid realignment or resolution reaggregation",
+    "spatial block sizes are sensitivity choices, not estimated correlation lengths",
+    "multiple exploratory contrasts, no multiplicity correction"
+  ]
+}

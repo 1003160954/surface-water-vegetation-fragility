@@ -1,0 +1,22 @@
+figure,sources,reproduction
+Fig1,figures/Fig1_editable.pptx (editable methodological diagram),editable PowerPoint
+Fig2,data/maps/grid_map_data.csv,src/final_release/plot_final_figures.py
+Fig3,data/maps/grid_map_data.csv; data/context/corrected_context_map.csv,src/final_release/plot_final_figures.py
+Fig4,data/maps/exposure_risks.csv; data/maps/high_HDSI_map.csv,src/final_release/plot_final_figures.py
+Fig5,data/Figure5_data.csv,src/final_release/plot_final_figures.py
+Fig6,data/context/context_fragility.csv; data/Fig6_high_risks.csv,src/final_release/plot_final_figures.py
+Fig7,data/diagnostics/corrected_component_and_seasonal_means.csv; data/context/context_fragility.csv,src/final_release/plot_final_figures.py
+Fig8,data/diagnostics/corrected_regional_AFB.csv,src/final_release/plot_final_figures.py
+Fig_S1,data/distance/sample_coverage.csv; data/distance/sample_representativeness.csv,src/final_release/plot_final_figures.py
+Fig_S2,data/native_distance_checks.csv,src/final_release/plot_final_figures.py
+Fig_S3,data/distance/distance_band_fragility.csv,src/final_release/plot_final_figures.py
+Fig_S4,data/distance/adjusted_spline_predictions.csv,src/final_release/plot_final_figures.py
+Fig_S5,data/distance/adjusted_distance_contrasts.csv,src/final_release/plot_final_figures.py
+Fig_S6_adjusted_contrasts,data/adjusted/M2_AFB.csv; data/adjusted/M1_AFB.csv,src/final_release/plot_final_figures.py
+Fig_S7_common_landscapes,data/adjusted/M2_AFB.csv; data/adjusted/common_landscape_AFB.csv,src/final_release/plot_final_figures.py
+Fig_S8_covariate_balance,data/covariate_balance.csv,src/final_release/plot_final_figures.py
+Fig_S9_noncropland,data/adjusted/M2_AFB.csv; data/noncropland/M2_AFB.csv,src/final_release/plot_final_figures.py
+Fig_S10,data/robustness/HDSI_variant_AFB.csv,src/final_release/plot_final_figures.py
+Fig_S11,data/robustness/event_threshold_AFB.csv,src/final_release/plot_final_figures.py
+Fig_S12,data/robustness/leave_analysis_year_out_AFB.csv,src/final_release/plot_final_figures.py
+Fig_S13,data/robustness/spatial_block_AFB.csv,src/final_release/plot_final_figures.py

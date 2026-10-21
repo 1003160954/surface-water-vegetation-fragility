@@ -1,0 +1,13 @@
+context,variable,mean,n
+permanent,summer_VPD_z,0.5445877020334887,19276
+permanent,summer_LST_Day_z,0.505676041558979,19276
+permanent,summer_SM_rootproxy_z,-0.7056578560360237,19276
+permanent,summer_Precip_z,-0.3767320861035987,19276
+seasonal,summer_VPD_z,0.5575097904046714,38745
+seasonal,summer_LST_Day_z,0.4980203901610407,38745
+seasonal,summer_SM_rootproxy_z,-0.6968235239548635,38745
+seasonal,summer_Precip_z,-0.3780409789682432,38745
+other,summer_VPD_z,0.527941568686026,1228
+other,summer_LST_Day_z,0.4821925119720005,1228
+other,summer_SM_rootproxy_z,-0.6559598741782896,1228
+other,summer_Precip_z,-0.36226278838918413,1228

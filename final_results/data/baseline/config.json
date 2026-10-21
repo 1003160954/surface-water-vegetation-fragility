@@ -1,0 +1,19 @@
+{
+  "source": "data/raw/china_panel_16day_core_patched.parquet",
+  "source_rows": 5619038,
+  "reference": "exclude target year at each grid/16-day position",
+  "min_reference_observations": 3,
+  "sample_sd_ddof": 1,
+  "sd_mask": 1e-06,
+  "clip": [
+    -5,
+    5
+  ],
+  "eligible_main_rows": 236995,
+  "paired_valid_rows": 209985,
+  "paired_valid_grids": 37878,
+  "excluded_rows": 27010,
+  "bootstrap": 300,
+  "seed": 20261020,
+  "long_independent_baseline": false
+}
