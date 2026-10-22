@@ -8,7 +8,10 @@ from matplotlib.patches import Patch
 ROOT=Path(__file__).resolve().parents[2];os.chdir(ROOT)
 out=Path('final_results');F=out/'figures';f=F;data=out/'data';F.mkdir(exist_ok=True)
 plt.rcParams.update({'font.family':'Times New Roman','font.size':11,'pdf.fonttype':42,'axes.spines.top':False,'axes.spines.right':False})
+from map_insets import add_geographic_insets
+
 def save(fig,name):
+ add_geographic_insets(fig,name,ROOT)
  for ext in ['png','pdf']:fig.savefig(F/(name+'.'+ext),dpi=250,bbox_inches='tight')
  plt.close(fig)
 E=data/'maps';P=data/'context'

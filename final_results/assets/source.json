@@ -1,0 +1,21 @@
+{
+  "source": "User-provided PowerPoint",
+  "source_sha256": "0fa10093f3d6aca772817240657c9d984a0dfd98430931127a438e94930031f0",
+  "slide": 10,
+  "shape_id": 6146,
+  "pixel_crop": [
+    490,
+    308,
+    583,
+    432
+  ],
+  "original_pixels": [
+    601,
+    451
+  ],
+  "inset_pixels": [
+    93,
+    124
+  ],
+  "role": "grayscale geographic locator; no quantitative data"
+}

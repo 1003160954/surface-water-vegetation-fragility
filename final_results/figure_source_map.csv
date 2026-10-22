@@ -1,13 +1,13 @@
 figure,sources,reproduction
 Fig1,figures/Fig1_editable.pptx (editable methodological diagram),editable PowerPoint
-Fig2,data/maps/grid_map_data.csv,src/final_release/plot_final_figures.py
-Fig3,data/maps/grid_map_data.csv; data/context/corrected_context_map.csv,src/final_release/plot_final_figures.py
-Fig4,data/maps/exposure_risks.csv; data/maps/high_HDSI_map.csv,src/final_release/plot_final_figures.py
+Fig2,data/maps/grid_map_data.csv; assets/south_china_sea_reference.png,src/final_release/plot_final_figures.py
+Fig3,data/maps/grid_map_data.csv; data/context/corrected_context_map.csv; assets/south_china_sea_reference.png,src/final_release/plot_final_figures.py
+Fig4,data/maps/exposure_risks.csv; data/maps/high_HDSI_map.csv; assets/south_china_sea_reference.png,src/final_release/plot_final_figures.py
 Fig5,data/Figure5_data.csv,src/final_release/plot_final_figures.py
 Fig6,data/context/context_fragility.csv; data/Fig6_high_risks.csv,src/final_release/plot_final_figures.py
 Fig7,data/diagnostics/corrected_component_and_seasonal_means.csv; data/context/context_fragility.csv,src/final_release/plot_final_figures.py
 Fig8,data/diagnostics/corrected_regional_AFB.csv,src/final_release/plot_final_figures.py
-Fig_S1,data/distance/sample_coverage.csv; data/distance/sample_representativeness.csv,src/final_release/plot_final_figures.py
+Fig_S1,data/distance/sample_coverage.csv; data/distance/sample_representativeness.csv; assets/south_china_sea_reference.png,src/final_release/plot_final_figures.py
 Fig_S2,data/native_distance_checks.csv,src/final_release/plot_final_figures.py
 Fig_S3,data/distance/distance_band_fragility.csv,src/final_release/plot_final_figures.py
 Fig_S4,data/distance/adjusted_spline_predictions.csv,src/final_release/plot_final_figures.py
