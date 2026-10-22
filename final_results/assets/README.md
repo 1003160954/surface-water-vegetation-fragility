@@ -1,5 +1,5 @@
-# Geographic inset source
+# Map-specific South China Sea insets
 
-The South China Sea locator is cropped from the user-supplied reference PowerPoint (slide 10, picture 6146), using its stored crop bounds. It is reproduced in grayscale to distinguish it from the study's quantitative colour scales. It supplies geographic context only; island symbols and boundary strokes are reference artwork, not new vegetation observations. The original reference is a raster image, so this operation does not add geographic detail or establish boundary accuracy. No new national boundary dataset was introduced.
+Each of the seven map panels supplies its own southern-region crop (105–125°E, 18–26°N), taken directly from that panel's rendered pixels. Crops retain the corresponding map colours and are overlaid inside the upper reference inset frame. The island symbols in the lower portion come from the supplied PowerPoint artwork. The inset is a cartographic montage following the supplied template, not a new georeferenced dataset or an extension of sampled vegetation coverage.
 
-The main data arrays, classifications, colour ranges and statistical estimates are unchanged. Insets appear inside the lower-right blank area of all seven map panels in Figs. 2–4 and Fig. S1. Each inset remains a separate movable picture in the accompanying PowerPoint.
+Files ending in southern_crop.png are the individual source crops. Files ending in inset.png are the corresponding composites. The PowerPoint preserves each composite as a separate movable picture. Quantitative data and colour scales are unchanged.

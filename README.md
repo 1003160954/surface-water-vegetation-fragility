@@ -211,4 +211,5 @@ Summer (DOY 152–243) and late summer (DOY 213–273), assigned by 16-day midpo
 
 This repository contains research code, source metadata and derived evidence. Manuscript and reviewer-response documents, large input panels, credentials and private local files remain outside this public release. The [manifest](final_results/manifest.csv) records hashes of the final derived files. Access to original input panels is separate from access to this repository.
 
-The seven map panels in Figs. 2–4 and Fig. S1 include a grayscale South China Sea locator taken from the supplied reference artwork. The [map PowerPoint](final_results/figures/Map_figures_editable.pptx) keeps each inset separately movable. [Source and role](final_results/assets/README.md). Quantitative data and colour scales are unchanged.
+
+The seven map panels in Figs. 2–4 and Fig. S1 include individual southern-region crops taken from each corresponding map panel, overlaid on the supplied South China Sea reference outline. The [map PowerPoint](final_results/figures/Map_figures_editable.pptx) keeps each inset separately movable. [Source and role](final_results/assets/README.md). Quantitative data and colour scales are unchanged.

@@ -17,5 +17,11 @@
     93,
     124
   ],
-  "role": "grayscale geographic locator; no quantitative data"
+  "role": "Reference outline below individual map-specific southern crops",
+  "crop_extent_degrees": [
+    105,
+    125,
+    18,
+    26
+  ]
 }
