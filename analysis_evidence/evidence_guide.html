@@ -1,4 +1,4 @@
-<!doctype html><meta charset="utf-8"><title>Reproducibility evidence guide</title><style>body{max-width:1150px;margin:35px auto;font:16px Arial;line-height:1.65;padding:0 24px}table{border-collapse:collapse;font-size:12px}td,th{border:1px solid #ddd;padding:8px;vertical-align:top}img{max-width:100%}h1,h2{color:#111}</style><h1>Evidence from source tables to quantitative figures</h1><p>This guide accompanies the full reviewer response. It documents actual computations, including outcomes that support and limit the buffering interpretation. It does not establish whether prose was AI-assisted; AI assistance is disclosed separately. Original satellite-to-panel provenance is incomplete.</p><table border="1" class="dataframe">
+<!doctype html><meta charset="utf-8"><title>Reproducibility evidence guide</title><style>body{max-width:1150px;margin:35px auto;font:16px Arial;line-height:1.65;padding:0 24px}table{border-collapse:collapse;font-size:12px}td,th{border:1px solid #ddd;padding:8px;vertical-align:top}img{max-width:100%}h1,h2{color:#111}</style><h1>Evidence from source tables to quantitative figures</h1><p>This guide documents the calculations linking source tables, event definitions, model estimates and quantitative figures. Source coverage and inference limits are reported alongside the results.</p><table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th>step</th>
@@ -12,14 +12,14 @@
     <tr>
       <td>01</td>
       <td>Original data products</td>
-      <td>docs/data_sources.csv; reviewer_evidence/all_panel_fields_dictionary.csv</td>
+      <td>docs/data_sources.csv; analysis_evidence/all_panel_fields_dictionary.csv</td>
       <td>Known JRC/land-cover/climate/pilot products; original vegetation/thermal IDs partly unresolved</td>
       <td>gee/; docs/original_sources/upstream_seasonal_source_only.ipynb</td>
     </tr>
     <tr>
       <td>02</td>
       <td>Supplied raw analysis export</td>
-      <td>logs/E00_manifest.json; reviewer_evidence/raw_input_manifest.json</td>
+      <td>logs/E00_manifest.json; analysis_evidence/raw_input_manifest.json</td>
       <td>244306 grid-years,55418grids; no duplicate grid-year keys</td>
       <td>src/audit_pipeline.py</td>
     </tr>
@@ -33,7 +33,7 @@
     <tr>
       <td>04</td>
       <td>Stress and event assignments</td>
-      <td>reviewer_evidence/worked_grid_year_examples.csv</td>
+      <td>analysis_evidence/worked_grid_year_examples.csv</td>
       <td>HDSI four-component mean; Q25/Q75; EVI/LAI&lt;-.5; OR event</td>
       <td>src/audit_pipeline.py</td>
     </tr>
@@ -47,7 +47,7 @@
     <tr>
       <td>06</td>
       <td>Event risk and fragility</td>
-      <td>reviewer_evidence/risk_numerators_and_arithmetic.csv; reviewer_evidence/AFB_arithmetic.csv</td>
+      <td>analysis_evidence/risk_numerators_and_arithmetic.csv; analysis_evidence/AFB_arithmetic.csv</td>
       <td>Integer event counts / denominators -&gt; high-low risk -&gt; signed context contrast</td>
       <td>src/audit_pipeline.py; src/analyze_corrected_1km.py</td>
     </tr>
@@ -61,9 +61,9 @@
     <tr>
       <td>08</td>
       <td>Landscape and agricultural sensitivity</td>
-      <td>reviewer_evidence/corrected_covariate_balance.csv; experiments/E02_confounding/corrected_noncrop/</td>
+      <td>analysis_evidence/corrected_covariate_balance.csv; experiments/E02_confounding/corrected_noncrop/</td>
       <td>46strata; excludes crop/mosaic in additional analysis; no full irrigation control claimed</td>
-      <td>src/common_landscape.py; src/reviewer_noncrop.py</td>
+      <td>src/common_landscape.py; src/noncropland_sensitivity.py</td>
     </tr>
     <tr>
       <td>09</td>
@@ -75,9 +75,9 @@
     <tr>
       <td>10</td>
       <td>Quantitative visualizations</td>
-      <td>revised_figures/figure_source_map.csv; reviewer_evidence/figure_source_map.csv</td>
+      <td>diagnostic_figures/figure_source_map.csv; analysis_evidence/figure_source_map.csv</td>
       <td>Main8 figures plus corrected support plots; raw tables retained; no AI image generation</td>
-      <td>src/revision_figures.py; src/build_reviewer_evidence.py</td>
+      <td>src/plot_diagnostics.py; src/build_analysis_evidence.py</td>
     </tr>
   </tbody>
 </table><h2>Every main risk estimate can be recomputed from integer counts</h2><table border="1" class="dataframe">
@@ -337,4 +337,4 @@
       <td>30212</td>
     </tr>
   </tbody>
-</table><h2>SFig12_noncrop_sensitivity</h2><img src="figures/SFig12_noncrop_sensitivity.png"><p>E02/corrected_noncrop/M2_AFB.csv; full corrected1km harmonized/M2_AFB.csv</p><h2>SFig13_corrected_balance</h2><img src="figures/SFig13_corrected_balance.png"><p>reviewer_evidence/corrected_covariate_balance.csv; .1 line is a descriptive reference, not a validity threshold</p><h2>SFig14_corrected_HDSI</h2><img src="figures/SFig14_corrected_HDSI.png"><p>corrected1km/robustness/HDSI_variant_AFB.csv</p><h2>SFig15_corrected_thresholds</h2><img src="figures/SFig15_corrected_thresholds.png"><p>corrected1km/robustness/event_threshold_AFB.csv</p><h2>SFig16_corrected_year_omissions</h2><img src="figures/SFig16_corrected_year_omissions.png"><p>corrected1km/robustness/leave_analysis_year_out_AFB.csv</p><h2>SFig17_sample_flow</h2><img src="figures/SFig17_sample_flow.png"><p>E00/sample_flow.csv; no new filtering invented</p>
+</table><h2>SFig12_noncrop_sensitivity</h2><img src="figures/SFig12_noncrop_sensitivity.png"><p>E02/corrected_noncrop/M2_AFB.csv; full corrected1km harmonized/M2_AFB.csv</p><h2>SFig13_corrected_balance</h2><img src="figures/SFig13_corrected_balance.png"><p>analysis_evidence/corrected_covariate_balance.csv; .1 line is a descriptive reference, not a validity threshold</p><h2>SFig14_corrected_HDSI</h2><img src="figures/SFig14_corrected_HDSI.png"><p>corrected1km/robustness/HDSI_variant_AFB.csv</p><h2>SFig15_corrected_thresholds</h2><img src="figures/SFig15_corrected_thresholds.png"><p>corrected1km/robustness/event_threshold_AFB.csv</p><h2>SFig16_corrected_year_omissions</h2><img src="figures/SFig16_corrected_year_omissions.png"><p>corrected1km/robustness/leave_analysis_year_out_AFB.csv</p><h2>SFig17_sample_flow</h2><img src="figures/SFig17_sample_flow.png"><p>E00/sample_flow.csv; no new filtering invented</p>

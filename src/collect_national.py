@@ -2,7 +2,7 @@ from pathlib import Path
 import sys,json,datetime
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from audit_pipeline import *
-cloud=Path(__import__('os').environ.get('AQUATIC_EXPORT_DIR','G:/My Drive/aquatic_revision_E01_20261020'));out=ROOT/'experiments/E01_spatial_support';_,d=load_panel();need=set(d.grid_id.unique());summary=[]
+cloud=Path(__import__('os').environ.get('AQUATIC_EXPORT_DIR','data/exports/aquatic_spatial_metrics'));out=ROOT/'experiments/E01_spatial_support';_,d=load_panel();need=set(d.grid_id.unique());summary=[]
 for prefix,kind in [('E01_corrected_centroids_20261020_UTM','centroid'),('E01_within_cell_20261020_UTM','within_cell')]:
  files=sorted(cloud.glob(prefix+'*.csv'));a=pd.concat([pd.read_csv(p) for p in files],ignore_index=True) if files else pd.DataFrame();n=len(a);rec={'type':kind,'n_files':len(files),'n_rows':n,'expected_grids':len(need),'complete':False}
  if len(a):

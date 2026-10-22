@@ -1,4 +1,4 @@
-REVIEWER EVIDENCE SAVED 27 worked grid-years; balance
+ANALYSIS EVIDENCE SAVED 27 worked grid-years; balance
                            stage                covariate  permanent_mean  seasonal_mean       SMD  n_grids
             all_corrected_grids                elevation     1292.114871     942.069829 -0.230732    17811
             all_corrected_grids                    slope        0.762860       0.604473 -0.172350    17811

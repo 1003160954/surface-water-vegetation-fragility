@@ -5,7 +5,7 @@ import matplotlib;matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 b=Path.cwd();project=b;sys.path.insert(0,str(project/'src'))
 from audit_pipeline import load_panel,group_effects
-out=b/'outputs/manuscript_revision_v4';out.mkdir(parents=True,exist_ok=True);t=out/'supporting_data';t.mkdir(exist_ok=True);fig=out/'figures';fig.mkdir(exist_ok=True)
+out=b/'outputs/component_regional_analysis';out.mkdir(parents=True,exist_ok=True);t=out/'supporting_data';t.mkdir(exist_ok=True);fig=out/'figures';fig.mkdir(exist_ok=True)
 _,d=load_panel();c=pd.read_csv(project/'experiments/E01_spatial_support/national_corrected_1km_contexts.csv');d=d.merge(c,on='grid_id',validate='many_to_one');d['context']=np.where(d.near_perm_1km_corrected==1,'permanent',np.where(d.near_seasonal_1km_corrected==1,'seasonal','other'));q=d.HDSI.quantile([.25,.75]);d['exposure']=np.where(d.HDSI<q.iloc[0],'low',np.where(d.HDSI>q.iloc[1],'high','middle'));d['LAI_seasonal_change']=d.late_summer_LAI_z-d.spring_LAI_z
 # Bootstrap whole grids, retaining all available years and fixed national HDSI cutpoints.
 grids=pd.Index(d.grid_id.unique());ix=grids.get_indexer(d.grid_id);rng=np.random.default_rng(20261020);W=np.array([np.bincount(rng.integers(len(grids),size=len(grids)),minlength=len(grids)) for _ in range(300)],dtype=np.float32)

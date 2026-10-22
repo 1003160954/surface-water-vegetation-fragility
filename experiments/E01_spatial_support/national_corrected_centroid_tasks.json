@@ -6,7 +6,6 @@
   "seasonal_definition": "1 <= seasonality <10",
   "search_radius_km": 61.44,
   "range_flag": "dist <61.44; farther distances are censored, not valid exact distances",
-  "folder": "aquatic_revision_E01_20261020",
   "tasks": [
     {
       "zone": 43,

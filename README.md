@@ -2,7 +2,7 @@
 
 Reproducible analysis of vegetation risk amplification under compound heat and dryness across China, 2018–2023.
 
-The [final analysis package](final_results/README.md) contains the current numerical results, figure files, full uncertainty outputs, and executable plotting code. It supersedes earlier displayed figure versions; earlier experiment outputs remain available for provenance. The research design compares mapped aquatic contexts, broad centroid-distance associations, component exposure, seasonal canopy change, and regional contrasts.
+The [analysis package](final_results/README.md) contains the current numerical results, figure files, full uncertainty outputs, and executable plotting code. The research design compares mapped aquatic contexts, broad centroid-distance associations, component exposure, seasonal canopy change, and regional contrasts.
 
 ## Principal findings
 
@@ -13,7 +13,7 @@ The [final analysis package](final_results/README.md) contains the current numer
 - Regional LAI contrasts are positive in Southwest and South China and negative in East China. Mean high-stress seasonal LAI change is similar in permanent and other contexts.
 - Excluding each evaluated year from its anomaly reference retains positive permanent-versus-other contrasts in paired analyses, but event agreement is 91.3% for EVI, 89.5% for LAI and 87.2% for combined events. Classification is therefore not baseline-invariant.
 
-## Current figures
+## Research overview
 
 ![Methodological workflow](final_results/figures/Fig1.png)
 ![Aquatic contexts and vegetation events](final_results/figures/Fig3.png)
@@ -21,22 +21,22 @@ The [final analysis package](final_results/README.md) contains the current numer
 ![Aquatic-context risks and fragility](final_results/figures/Fig6.png)
 ![Regional contrasts](final_results/figures/Fig8.png)
 
-All [main and supplementary graphics](final_results/figures/) are available as PNG and PDF; the workflow has an editable PowerPoint source. The [final package guide](final_results/README.md) describes regeneration and maps the evidence files to analyses. Figures use numerical data and deterministic plotting scripts. AI-assisted tools were used for language polishing and assistance with writing portions of the analysis code.
+All [main and supplementary graphics](final_results/figures/) are available as PNG and PDF; the workflow has an editable PowerPoint source. The [analysis guide](final_results/README.md) describes regeneration and maps the evidence files to analyses. Figures use numerical data and deterministic plotting scripts. AI-assisted tools were used for language polishing and assistance with writing portions of the analysis code.
 
 ## From data to results
 
-The [computation guide](docs/COMPUTATION_STEPS.md) specifies inputs, transformations, commands, outputs and assumptions. The [field dictionary](reviewer_evidence/all_panel_fields_dictionary.csv) documents fields and missingness.
+The [computation guide](docs/COMPUTATION_STEPS.md) specifies inputs, transformations, commands, outputs and assumptions. The [field dictionary](analysis_evidence/all_panel_fields_dictionary.csv) documents fields and missingness.
 
 | Step | Operation | Evidence | Code |
 | --- | --- | --- | --- |
-| 1 | Identify source products | docs/data_sources.csv; reviewer_evidence/all_panel_fields_dictionary.csv | gee/; docs/original_sources/upstream_seasonal_source_only.ipynb |
-| 2 | Verify the supplied analysis export | logs/E00_manifest.json; reviewer_evidence/raw_input_manifest.json | src/audit_pipeline.py |
+| 1 | Identify source products | docs/data_sources.csv; analysis_evidence/all_panel_fields_dictionary.csv | gee/; docs/original_sources/upstream_seasonal_source_only.ipynb |
+| 2 | Verify the supplied analysis export | logs/E00_manifest.json; analysis_evidence/raw_input_manifest.json | src/audit_pipeline.py |
 | 3 | Apply validity rules and seasonal anomaly definitions | experiments/E00_original_reproduction/sample_flow.csv | docs/original_sources/upstream_seasonal_source_only.ipynb |
-| 4 | Assign stress exposure and events | reviewer_evidence/worked_grid_year_examples.csv | src/audit_pipeline.py |
-| 5 | Correct aquatic-context assignments | experiments/E01_spatial_support/national_corrected_1km_contexts.csv | gee/corrected_near_contexts.py |
-| 6 | Calculate risk, fragility and AFB | reviewer_evidence/risk_numerators_and_arithmetic.csv; reviewer_evidence/AFB_arithmetic.csv | src/audit_pipeline.py; src/analyze_corrected_1km.py |
+| 4 | Assign stress exposure and events | analysis_evidence/worked_grid_year_examples.csv | src/audit_pipeline.py |
+| 5 | Assign aquatic contexts using projected water distances | experiments/E01_spatial_support/national_corrected_1km_contexts.csv | gee/corrected_near_contexts.py |
+| 6 | Calculate risk, fragility and AFB | analysis_evidence/risk_numerators_and_arithmetic.csv; analysis_evidence/AFB_arithmetic.csv | src/audit_pipeline.py; src/analyze_corrected_1km.py |
 | 7 | Adjust for measured covariates | experiments/E01_spatial_support/corrected_1km/harmonized/ | src/harmonized_confounding.py; src/analyze_corrected_1km.py |
-| 8 | Assess landscape and agricultural composition | reviewer_evidence/corrected_covariate_balance.csv; experiments/E02_confounding/corrected_noncrop/ | src/common_landscape.py; src/reviewer_noncrop.py |
+| 8 | Assess landscape and agricultural composition | analysis_evidence/corrected_covariate_balance.csv; experiments/E02_confounding/corrected_noncrop/ | src/common_landscape.py; src/noncropland_sensitivity.py |
 | 9 | Evaluate sensitivity and spatial uncertainty | experiments/E01_spatial_support/corrected_1km/robustness/ | src/robustness.py; src/analyze_corrected_1km.py |
 | 10 | Recalculate target-year-excluded anomalies | final_results/data/baseline/ | src/final_release/baseline_crossfit.py |
 | 11 | Generate quantitative figures | final_results/figure_source_map.csv | src/final_release/plot_final_figures.py |
@@ -45,7 +45,7 @@ The [computation guide](docs/COMPUTATION_STEPS.md) specifies inputs, transformat
 
 For combined events in permanent contexts, low- and high-HDSI risks are 0.214610 and 0.374590, giving fragility 0.159979. Other-context risks are 0.192537 and 0.413478, giving fragility 0.220940. Thus other-minus-permanent AFB is 0.220940 − 0.159979 = 0.060961.
 
-Full-precision values and integer numerators/denominators are in [risk_numerators_and_arithmetic.csv](reviewer_evidence/risk_numerators_and_arithmetic.csv) and [AFB_arithmetic.csv](reviewer_evidence/AFB_arithmetic.csv). Rounded figure labels should not be used to check final-digit agreement. The 27 [worked grid-year examples](reviewer_evidence/worked_grid_year_examples.csv) come from six grids selected with fixed random seeds; they illustrate the calculations and are not the inference sample.
+Full-precision values and integer numerators/denominators are in [risk_numerators_and_arithmetic.csv](analysis_evidence/risk_numerators_and_arithmetic.csv) and [AFB_arithmetic.csv](analysis_evidence/AFB_arithmetic.csv). Rounded figure labels should not be used to check final-digit agreement. The 27 [worked grid-year examples](analysis_evidence/worked_grid_year_examples.csv) come from six grids selected with fixed random seeds; they illustrate the calculations and are not the inference sample.
 
 ## Data sources
 
@@ -55,14 +55,14 @@ Full-precision values and integer numerators/denominators are in [risk_numerator
 | MODIS MCD12Q1 v6.1, 2018 | Categorical land cover for adjustment and stratification | [Official catalog](https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD12Q1); `MODIS/061/MCD12Q1`. Categories are aggregated by spatial mode rather than averaging class codes. |
 | WorldClim v1 monthly, 1960–1990 | Background annual mean temperature and annual precipitation | [Official catalog](https://developers.google.com/earth-engine/datasets/catalog/WORLDCLIM_V1_MONTHLY); `WORLDCLIM/V1/MONTHLY`. These covariates are not an independent vegetation-anomaly reference. |
 | ESA WorldCover v200, 2021 | Vegetation mask for the 24-cell within-cell distance pilot | [Official catalog](https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCover_v200); `ESA/WorldCover/v200`. Not used to define the national main response. |
-| Supplied vegetation–climate analysis export | EVI/LAI, summer climate indicators, validity flags and original context variables | [Input identity and SHA-256](reviewer_evidence/raw_input_manifest.json). This is a processed analysis table, not raw satellite imagery. Some exact upstream MODIS/ERA5 collection versions and QA details remain unverified and are identified as provenance gaps. |
+| Supplied vegetation–climate analysis export | EVI/LAI, summer climate indicators, validity flags and original context variables | [Input identity and SHA-256](analysis_evidence/raw_input_manifest.json). This is a processed analysis table, not raw satellite imagery. Some exact upstream MODIS/ERA5 collection versions and QA details remain unverified and are identified as provenance gaps. |
 | Existing climatology export | Check the sample size of the recent seasonal reference | At most six annual observations per reference position; see [reference metadata](experiments/E03_independent_baseline/status.json). It does not provide an independent 2001–2017 reference. |
 
 Further details are in [data_sources.csv](docs/data_sources.csv) and [DATA_ACCESS.md](docs/DATA_ACCESS.md). Credit water maps to **EC JRC/Google** and follow each product’s attribution and usage terms. Source catalog links identify products; they do not establish complete recovery of the original processing history.
 
 ## Covariate adjustment and sensitivity analyses
 
-The analysis uses local seasonal standardization; adjustment for terrain, land cover, background climate, year and geographic terms; supported landscape strata with common weights; exclusion of dominant cropland and mosaic classes; and grid-cluster and multi-scale spatial uncertainty calculations. The [controls and limitations table](reviewer_evidence/confounding_controls_and_limits.csv) explains what each approach addresses.
+The analysis uses local seasonal standardization; adjustment for terrain, land cover, background climate, year and geographic terms; supported landscape strata with common weights; exclusion of dominant cropland and mosaic classes; and grid-cluster and multi-scale spatial uncertainty calculations. The [controls and limitations table](analysis_evidence/confounding_controls_and_limits.csv) explains what each approach addresses.
 
 Within the restricted, commonly weighted landscape sample, absolute descriptive standardized mean differences are approximately 0.037 for elevation, 0.002 for slope, 0.028 for temperature and 0.033 for precipitation. Selection and weighting change the target population, so the differences cannot be attributed to weighting alone or interpreted as removal of all confounding.
 
@@ -125,30 +125,6 @@ Excluding 2018 modal cropland class 12 and cropland/natural-vegetation mosaic cl
 
 [PDF](final_results/figures/Fig_S1.pdf)
 
-### Fig_S10
-
-![Fig_S10](final_results/figures/Fig_S10.png)
-
-[PDF](final_results/figures/Fig_S10.pdf)
-
-### Fig_S11
-
-![Fig_S11](final_results/figures/Fig_S11.png)
-
-[PDF](final_results/figures/Fig_S11.pdf)
-
-### Fig_S12
-
-![Fig_S12](final_results/figures/Fig_S12.png)
-
-[PDF](final_results/figures/Fig_S12.pdf)
-
-### Fig_S13
-
-![Fig_S13](final_results/figures/Fig_S13.png)
-
-[PDF](final_results/figures/Fig_S13.pdf)
-
 ### Fig_S2
 
 ![Fig_S2](final_results/figures/Fig_S2.png)
@@ -197,19 +173,43 @@ Excluding 2018 modal cropland class 12 and cropland/natural-vegetation mosaic cl
 
 [PDF](final_results/figures/Fig_S9_noncropland.pdf)
 
+### Fig_S10
+
+![Fig_S10](final_results/figures/Fig_S10.png)
+
+[PDF](final_results/figures/Fig_S10.pdf)
+
+### Fig_S11
+
+![Fig_S11](final_results/figures/Fig_S11.png)
+
+[PDF](final_results/figures/Fig_S11.pdf)
+
+### Fig_S12
+
+![Fig_S12](final_results/figures/Fig_S12.png)
+
+[PDF](final_results/figures/Fig_S12.pdf)
+
+### Fig_S13
+
+![Fig_S13](final_results/figures/Fig_S13.png)
+
+[PDF](final_results/figures/Fig_S13.pdf)
+
 ## Reproduction
 
 Install `requirements.txt`, then run `python src/final_release/plot_final_figures.py` from the repository root. This reconstructs all quantitative final plots from the published derived CSV files without submitting Earth Engine tasks. The methods flowchart is supplied as an editable PowerPoint file.
 
-For the target-year-excluded anomaly experiment, set `RAW_CORE_PANEL` to the patched 16-day source panel and `AQUATIC_PANEL` to the seasonal analysis panel, then run `python src/final_release/baseline_crossfit.py`. The [final package guide](final_results/README.md) identifies every evidence directory. The [figure source map](final_results/figure_source_map.csv) links figures to numerical inputs.
+For the target-year-excluded anomaly experiment, set `RAW_CORE_PANEL` to the patched 16-day source panel and `AQUATIC_PANEL` to the seasonal analysis panel, then run `python src/final_release/baseline_crossfit.py`. The [analysis guide](final_results/README.md) identifies every evidence directory. The [figure source map](final_results/figure_source_map.csv) links figures to numerical inputs.
 
-The [computation guide](docs/COMPUTATION_STEPS.md) documents earlier model-reproduction entry points. Historical files are retained for provenance; the numbered figures in `final_results/figures` are the current manuscript set. Heavy exports remain paused. The independent long-reference and national within-cell/grid-realignment experiments have not been completed. Exact upstream product and quality-mask gaps are documented in the source inventory rather than inferred from variable names.
+The [computation guide](docs/COMPUTATION_STEPS.md) documents the analysis sequence. Numbered main and supplementary figures are in `final_results/figures`. Computationally intensive cloud exports are disabled by default. The independent long-reference and national within-cell/grid-realignment experiments have not been completed. Exact upstream product and quality-mask gaps are documented in the source inventory rather than inferred from variable names.
 
 Summer (DOY 152–243) and late summer (DOY 213–273), assigned by 16-day midpoints, overlap on DOY 213–243. The exposure–response association is partly concurrent. Positive point estimates alone do not establish causality; spatial uncertainty is reported across all tested block sizes.
 
 ## Public files
 
-This repository contains research code, source metadata and derived evidence. Manuscript and reviewer-response documents, large input panels, credentials and private local files remain outside this public release. The [manifest](final_results/manifest.csv) records hashes of the final derived files. Access to original input panels is separate from access to this repository.
+This repository contains research code, source metadata and derived evidence. Large input panels, credentials and private local files are not distributed. The [manifest](final_results/manifest.csv) records hashes of the final derived files. Access to original input panels is separate from access to this repository.
 
 
-The seven map panels in Figs. 2–4 and Fig. S1 include individual southern-region crops taken from each corresponding map panel, overlaid on the supplied South China Sea reference outline. The [map PowerPoint](final_results/figures/Map_figures_editable.pptx) keeps each inset separately movable. [Source and role](final_results/assets/README.md). Quantitative data and colour scales are unchanged.
+The seven map panels in Figs. 2–4 and Fig. S1 include individual southern-region crops taken from each corresponding map panel, overlaid on the supplied South China Sea reference outline. The [map PowerPoint](final_results/figures/Map_figures_editable.pptx) keeps each inset separately movable. [Source and role](final_results/assets/README.md). Each inset uses the corresponding panel’s data and colour scale.

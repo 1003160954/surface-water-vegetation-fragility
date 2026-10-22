@@ -1,9 +1,0 @@
-figure,sources,scope
-Fig1_workflow,"Executed sample flow, corrected method configuration, analysis status",completed corrected-context revision; no national distance reach inferred
-Fig2_JRC_attributes,figure_data/JRC_grid_attributes.csv; JRC GSW v1.4 discrete transition labels,completed corrected-context revision; no national distance reach inferred
-Fig3_corrected_contexts,figure_data/corrected_context_map.csv and JRC_grid_attributes.csv; counts are unique grids,completed corrected-context revision; no national distance reach inferred
-Fig4_exposure_risks,figure_data/exposure_risks.csv and high_HDSI_map.csv; 300 paired grid bootstrap draws,completed corrected-context revision; no national distance reach inferred
-Fig5_context_fragility,figure_data/corrected_context_fragility.csv; original distance validation retained as SFig18,completed corrected-context revision; no national distance reach inferred
-Fig6_corrected_contrasts,figure_data/corrected_M0_AFB.csv; M2_AFB.csv; M0 grid percentile CI versus M2 grid-cluster delta CI,completed corrected-context revision; no national distance reach inferred
-Fig7_landscape_contrasts,figure_data/corrected_landscape_AFB.csv; 296 valid of 300 paired grid bootstrap draws; fixed weights,completed corrected-context revision; no national distance reach inferred
-Fig8_spatial_uncertainty,"figure_data/corrected_spatial_block_AFB.csv; 300 paired block resamples; origin0,0",completed corrected-context revision; no national distance reach inferred

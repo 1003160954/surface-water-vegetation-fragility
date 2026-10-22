@@ -1,214 +1,130 @@
-# Complete quantitative figure inventory
+# Figure gallery
 
-Scope matters: corrected results, additional diagnostics and legacy algorithm audits are separate. A legacy distance curve is not physical ecological evidence.
+Main and supplementary figures follow the experimental sequence. Numerical inputs are listed in [figure_source_map.csv](../final_results/figure_source_map.csv).
 
-## Current main corrected evidence
+## Fig1
 
-### Fig1_workflow
+![Fig1](../final_results/figures/Fig1.png)
 
-![Fig1_workflow](../revised_figures/figures/Fig1_workflow.png)
+[PDF](../final_results/figures/Fig1.pdf)
 
-[PDF](../revised_figures/figures/Fig1_workflow.pdf)
+## Fig2
 
-### Fig2_JRC_attributes
+![Fig2](../final_results/figures/Fig2.png)
 
-![Fig2_JRC_attributes](../revised_figures/figures/Fig2_JRC_attributes.png)
+[PDF](../final_results/figures/Fig2.pdf)
 
-[PDF](../revised_figures/figures/Fig2_JRC_attributes.pdf)
+## Fig3
 
-### Fig3_corrected_contexts
+![Fig3](../final_results/figures/Fig3.png)
 
-![Fig3_corrected_contexts](../revised_figures/figures/Fig3_corrected_contexts.png)
+[PDF](../final_results/figures/Fig3.pdf)
 
-[PDF](../revised_figures/figures/Fig3_corrected_contexts.pdf)
+## Fig4
 
-### Fig4_exposure_risks
+![Fig4](../final_results/figures/Fig4.png)
 
-![Fig4_exposure_risks](../revised_figures/figures/Fig4_exposure_risks.png)
+[PDF](../final_results/figures/Fig4.pdf)
 
-[PDF](../revised_figures/figures/Fig4_exposure_risks.pdf)
+## Fig5
 
-### Fig5_context_fragility
+![Fig5](../final_results/figures/Fig5.png)
 
-![Fig5_context_fragility](../revised_figures/figures/Fig5_context_fragility.png)
+[PDF](../final_results/figures/Fig5.pdf)
 
-[PDF](../revised_figures/figures/Fig5_context_fragility.pdf)
+## Fig6
 
-### Fig6_corrected_contrasts
+![Fig6](../final_results/figures/Fig6.png)
 
-![Fig6_corrected_contrasts](../revised_figures/figures/Fig6_corrected_contrasts.png)
+[PDF](../final_results/figures/Fig6.pdf)
 
-[PDF](../revised_figures/figures/Fig6_corrected_contrasts.pdf)
+## Fig7
 
-### Fig7_landscape_contrasts
+![Fig7](../final_results/figures/Fig7.png)
 
-![Fig7_landscape_contrasts](../revised_figures/figures/Fig7_landscape_contrasts.png)
+[PDF](../final_results/figures/Fig7.pdf)
 
-[PDF](../revised_figures/figures/Fig7_landscape_contrasts.pdf)
+## Fig8
 
-### Fig8_spatial_uncertainty
+![Fig8](../final_results/figures/Fig8.png)
 
-![Fig8_spatial_uncertainty](../revised_figures/figures/Fig8_spatial_uncertainty.png)
+[PDF](../final_results/figures/Fig8.pdf)
 
-[PDF](../revised_figures/figures/Fig8_spatial_uncertainty.pdf)
+## Fig_S1
 
-### SFig18_distance_validation
+![Fig_S1](../final_results/figures/Fig_S1.png)
 
-![SFig18_distance_validation](../revised_figures/figures/SFig18_distance_validation.png)
+[PDF](../final_results/figures/Fig_S1.pdf)
 
-[PDF](../revised_figures/figures/SFig18_distance_validation.pdf)
+## Fig_S2
 
-## Additional corrected sensitivity/diagnostics
+![Fig_S2](../final_results/figures/Fig_S2.png)
 
-### SFig12_noncrop_sensitivity
+[PDF](../final_results/figures/Fig_S2.pdf)
 
-![SFig12_noncrop_sensitivity](../reviewer_evidence/figures/SFig12_noncrop_sensitivity.png)
+## Fig_S3
 
-[PDF](../reviewer_evidence/figures/SFig12_noncrop_sensitivity.pdf)
+![Fig_S3](../final_results/figures/Fig_S3.png)
 
-### SFig13_corrected_balance
+[PDF](../final_results/figures/Fig_S3.pdf)
 
-![SFig13_corrected_balance](../reviewer_evidence/figures/SFig13_corrected_balance.png)
+## Fig_S4
 
-[PDF](../reviewer_evidence/figures/SFig13_corrected_balance.pdf)
+![Fig_S4](../final_results/figures/Fig_S4.png)
 
-### SFig14_corrected_HDSI
+[PDF](../final_results/figures/Fig_S4.pdf)
 
-![SFig14_corrected_HDSI](../reviewer_evidence/figures/SFig14_corrected_HDSI.png)
+## Fig_S5
 
-[PDF](../reviewer_evidence/figures/SFig14_corrected_HDSI.pdf)
+![Fig_S5](../final_results/figures/Fig_S5.png)
 
-### SFig15_corrected_thresholds
+[PDF](../final_results/figures/Fig_S5.pdf)
 
-![SFig15_corrected_thresholds](../reviewer_evidence/figures/SFig15_corrected_thresholds.png)
+## Fig_S6_adjusted_contrasts
 
-[PDF](../reviewer_evidence/figures/SFig15_corrected_thresholds.pdf)
+![Fig_S6_adjusted_contrasts](../final_results/figures/Fig_S6_adjusted_contrasts.png)
 
-### SFig16_corrected_year_omissions
+[PDF](../final_results/figures/Fig_S6_adjusted_contrasts.pdf)
 
-![SFig16_corrected_year_omissions](../reviewer_evidence/figures/SFig16_corrected_year_omissions.png)
+## Fig_S7_common_landscapes
 
-[PDF](../reviewer_evidence/figures/SFig16_corrected_year_omissions.pdf)
+![Fig_S7_common_landscapes](../final_results/figures/Fig_S7_common_landscapes.png)
 
-### SFig17_sample_flow
+[PDF](../final_results/figures/Fig_S7_common_landscapes.pdf)
 
-![SFig17_sample_flow](../reviewer_evidence/figures/SFig17_sample_flow.png)
+## Fig_S8_covariate_balance
 
-[PDF](../reviewer_evidence/figures/SFig17_sample_flow.pdf)
+![Fig_S8_covariate_balance](../final_results/figures/Fig_S8_covariate_balance.png)
 
-## Historical/reproduction audit (SFig9–11 corrected)
+[PDF](../final_results/figures/Fig_S8_covariate_balance.pdf)
 
-### Fig1_verified_workflow
+## Fig_S9_noncropland
 
-![Fig1_verified_workflow](../figures/Fig1_verified_workflow.png)
+![Fig_S9_noncropland](../final_results/figures/Fig_S9_noncropland.png)
 
-[PDF](../figures/Fig1_verified_workflow.pdf)
+[PDF](../final_results/figures/Fig_S9_noncropland.pdf)
 
-### Fig2_JRC_metrics_discrete_transition
+## Fig_S10
 
-![Fig2_JRC_metrics_discrete_transition](../figures/Fig2_JRC_metrics_discrete_transition.png)
+![Fig_S10](../final_results/figures/Fig_S10.png)
 
-[PDF](../figures/Fig2_JRC_metrics_discrete_transition.pdf)
+[PDF](../final_results/figures/Fig_S10.pdf)
 
-### Fig3_context_and_combined_events
+## Fig_S11
 
-![Fig3_context_and_combined_events](../figures/Fig3_context_and_combined_events.png)
+![Fig_S11](../final_results/figures/Fig_S11.png)
 
-[PDF](../figures/Fig3_context_and_combined_events.pdf)
+[PDF](../final_results/figures/Fig_S11.pdf)
 
-### Fig4_HDSI_and_event_risks
+## Fig_S12
 
-![Fig4_HDSI_and_event_risks](../figures/Fig4_HDSI_and_event_risks.png)
+![Fig_S12](../final_results/figures/Fig_S12.png)
 
-[PDF](../figures/Fig4_HDSI_and_event_risks.pdf)
+[PDF](../final_results/figures/Fig_S12.pdf)
 
-### Fig5_numeric_distance_bands
+## Fig_S13
 
-![Fig5_numeric_distance_bands](../figures/Fig5_numeric_distance_bands.png)
+![Fig_S13](../final_results/figures/Fig_S13.png)
 
-[PDF](../figures/Fig5_numeric_distance_bands.pdf)
-
-### Fig6_context_risk_and_fragility
-
-![Fig6_context_risk_and_fragility](../figures/Fig6_context_risk_and_fragility.png)
-
-[PDF](../figures/Fig6_context_risk_and_fragility.pdf)
-
-### Fig7_exploratory_diagnostics
-
-![Fig7_exploratory_diagnostics](../figures/Fig7_exploratory_diagnostics.png)
-
-[PDF](../figures/Fig7_exploratory_diagnostics.pdf)
-
-### Fig8_all_regions_with_support
-
-![Fig8_all_regions_with_support](../figures/Fig8_all_regions_with_support.png)
-
-[PDF](../figures/Fig8_all_regions_with_support.pdf)
-
-### SFig10_corrected_1km_spatial_blocks
-
-![SFig10_corrected_1km_spatial_blocks](../figures/SFig10_corrected_1km_spatial_blocks.png)
-
-[PDF](../figures/SFig10_corrected_1km_spatial_blocks.pdf)
-
-### SFig11_corrected_1km_context_map
-
-![SFig11_corrected_1km_context_map](../figures/SFig11_corrected_1km_context_map.png)
-
-[PDF](../figures/SFig11_corrected_1km_context_map.pdf)
-
-### SFig1_same_sample_adjustment
-
-![SFig1_same_sample_adjustment](../figures/SFig1_same_sample_adjustment.png)
-
-[PDF](../figures/SFig1_same_sample_adjustment.pdf)
-
-### SFig2_spatial_block_uncertainty
-
-![SFig2_spatial_block_uncertainty](../figures/SFig2_spatial_block_uncertainty.png)
-
-[PDF](../figures/SFig2_spatial_block_uncertainty.pdf)
-
-### SFig3_HDSI_variants
-
-![SFig3_HDSI_variants](../figures/SFig3_HDSI_variants.png)
-
-[PDF](../figures/SFig3_HDSI_variants.pdf)
-
-### SFig4_event_thresholds
-
-![SFig4_event_thresholds](../figures/SFig4_event_thresholds.png)
-
-[PDF](../figures/SFig4_event_thresholds.pdf)
-
-### SFig5_leave_analysis_year_out
-
-![SFig5_leave_analysis_year_out](../figures/SFig5_leave_analysis_year_out.png)
-
-[PDF](../figures/SFig5_leave_analysis_year_out.pdf)
-
-### SFig6_centroid_distance_spline
-
-![SFig6_centroid_distance_spline](../figures/SFig6_centroid_distance_spline.png)
-
-[PDF](../figures/SFig6_centroid_distance_spline.pdf)
-
-### SFig7_within_cell_pilot
-
-![SFig7_within_cell_pilot](../figures/SFig7_within_cell_pilot.png)
-
-[PDF](../figures/SFig7_within_cell_pilot.pdf)
-
-### SFig8_harmonized_and_landscape
-
-![SFig8_harmonized_and_landscape](../figures/SFig8_harmonized_and_landscape.png)
-
-[PDF](../figures/SFig8_harmonized_and_landscape.pdf)
-
-### SFig9_corrected_1km_permanence
-
-![SFig9_corrected_1km_permanence](../figures/SFig9_corrected_1km_permanence.png)
-
-[PDF](../figures/SFig9_corrected_1km_permanence.pdf)
+[PDF](../final_results/figures/Fig_S13.pdf)
 

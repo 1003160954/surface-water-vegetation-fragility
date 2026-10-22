@@ -1,6 +1,6 @@
 figure,source,scope
 SFig12_noncrop_sensitivity,E02/corrected_noncrop/M2_AFB.csv; full corrected1km harmonized/M2_AFB.csv,corrected1km contexts; executed local analyses
-SFig13_corrected_balance,"reviewer_evidence/corrected_covariate_balance.csv; .1 line is a descriptive reference, not a validity threshold",corrected1km contexts; executed local analyses
+SFig13_corrected_balance,"analysis_evidence/corrected_covariate_balance.csv; .1 line is a descriptive reference, not a validity threshold",corrected1km contexts; executed local analyses
 SFig14_corrected_HDSI,corrected1km/robustness/HDSI_variant_AFB.csv,corrected1km contexts; executed local analyses
 SFig15_corrected_thresholds,corrected1km/robustness/event_threshold_AFB.csv,corrected1km contexts; executed local analyses
 SFig16_corrected_year_omissions,corrected1km/robustness/leave_analysis_year_out_AFB.csv,corrected1km contexts; executed local analyses

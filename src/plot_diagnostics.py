@@ -6,14 +6,14 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 from matplotlib.colors import ListedColormap,BoundaryNorm
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'revised_figures';F=OUT/'figures';F.mkdir(parents=True,exist_ok=True);D=OUT/'figure_data';D.mkdir(exist_ok=True);T=OUT/'evidence_tables';T.mkdir(exist_ok=True)
+OUT=ROOT/'diagnostic_figures';F=OUT/'figures';F.mkdir(parents=True,exist_ok=True);D=OUT/'figure_data';D.mkdir(exist_ok=True);T=OUT/'evidence_tables';T.mkdir(exist_ok=True)
 P=ROOT/'experiments/E01_spatial_support/corrected_1km';E=ROOT/'experiments/E05_figure_audit'
 plt.rcParams.update({'font.size':11,'axes.spines.top':False,'axes.spines.right':False,'font.family':'DejaVu Sans'})
 colors={'EVI':'#25805c','LAI':'#7857a3','combined':'#b63d49'};contextcols={'permanent':'#3678a8','seasonal':'#dc9c22','other':'#777777'};sources=[]
 def read(p,name):
  d=pd.read_csv(p);d.to_csv(D/(name+'.csv'),index=False);return d
 def finish(fig,name,source):
- fig.savefig(F/(name+'.png'),dpi=200,bbox_inches='tight');fig.savefig(F/(name+'.pdf'),bbox_inches='tight');plt.close(fig);sources.append({'figure':name,'sources':source,'scope':'completed corrected-context revision; no national distance reach inferred'})
+ fig.savefig(F/(name+'.png'),dpi=200,bbox_inches='tight');fig.savefig(F/(name+'.pdf'),bbox_inches='tight');plt.close(fig);sources.append({'figure':name,'sources':source,'scope':'aquatic-context analysis; no national distance reach inferred'})
 
 fig,ax=plt.subplots(figsize=(8,8));ax.axis('off')
 labels=[
@@ -109,4 +109,4 @@ pd.DataFrame([
  {'item':'Irrigation, groundwater, soil and dynamic management adjustment','status':'not included','scope':'background climate and modal land cover are included'},
  {'item':'Public GitHub/data release','status':'not created','scope':'local Git and evidence archive only'}
 ]).to_csv(T/'Table_R7_completion_and_provenance_gaps.csv',index=False)
-print('EIGHT REVISION FIGURES AND EVIDENCE TABLES SAVED')
+print('EIGHT DIAGNOSTIC FIGURES AND EVIDENCE TABLES SAVED')

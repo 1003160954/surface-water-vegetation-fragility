@@ -9,7 +9,7 @@ from scipy.special import expit
 from patsy import dmatrix,build_design_matrices
 sys.path.insert(0,str(Path('src').resolve()))
 from audit_pipeline import load_panel,group_effects,ROOT
-out=Path('outputs/concern2_distance_validation');out.mkdir(parents=True,exist_ok=True)
+out=Path('outputs/distance_validation');out.mkdir(parents=True,exist_ok=True)
 _,d=load_panel();q=d.HDSI.quantile([.25,.75]);cpath=ROOT/'experiments/E01_spatial_support/centroid_export_received.csv';c=pd.read_csv(cpath)
 assert not c.grid_id.duplicated().any()
 cov=pd.read_csv(ROOT/'experiments/E02_confounding/harmonized_landcover_climate_covariates.csv')

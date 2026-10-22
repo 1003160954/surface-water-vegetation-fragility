@@ -41,10 +41,6 @@
       "pass_": true
     },
     {
-      "check": "no manuscript working-draft authoring sources",
-      "pass_": true
-    },
-    {
       "check": "all public Python source files parse",
       "pass_": true
     },
