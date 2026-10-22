@@ -21,7 +21,7 @@ The [final analysis package](final_results/README.md) contains the current numer
 ![Aquatic-context risks and fragility](final_results/figures/Fig6.png)
 ![Regional contrasts](final_results/figures/Fig8.png)
 
-All [main and supplementary graphics](final_results/figures/) are available as PNG and PDF; the workflow has an editable PowerPoint source. The [final package guide](final_results/README.md) describes regeneration and maps the evidence files to analyses. Figures use numerical data and deterministic plotting scripts. AI assistance in revision included programming and language support, not generated observations.
+All [main and supplementary graphics](final_results/figures/) are available as PNG and PDF; the workflow has an editable PowerPoint source. The [final package guide](final_results/README.md) describes regeneration and maps the evidence files to analyses. Figures use numerical data and deterministic plotting scripts. AI-assisted tools were used for language polishing and assistance with writing portions of the analysis code.
 
 ## From data to results
 
