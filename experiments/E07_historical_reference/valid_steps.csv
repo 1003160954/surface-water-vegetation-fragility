@@ -1,0 +1,13 @@
+min_reference_years,variable,valid_target_steps
+10,EVI,849107
+10,LAI,869305
+10,VPD,1309806
+10,LST_Day,1300670
+10,SM_rootproxy,1309806
+10,Precip,1309806
+15,EVI,725799
+15,LAI,757211
+15,VPD,1144254
+15,LST_Day,1130002
+15,SM_rootproxy,1144254
+15,Precip,1144254

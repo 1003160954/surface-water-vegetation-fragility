@@ -7,11 +7,13 @@ The [analysis package](final_results/README.md) contains the current numerical r
 ## Principal findings
 
 - The national analysis includes 236,995 grid-years from 48,843 cells. Permanent, seasonal, and other contexts contain 2,549, 15,262, and 31,032 cells.
-- Permanent-context fragility is 0.1292 (EVI), 0.1408 (LAI), and 0.1600 (combined events), compared with 0.1901, 0.1972, and 0.2209 in other contexts.
-- The seasonal-minus-permanent EVI contrast is supported after measured-covariate adjustment and common-landscape restriction. LAI permanence evidence is weaker. All national 5° spatial-block contrast intervals include zero.
+- Under the primary recent reference, permanent-context fragility is 0.1292 (EVI), 0.1408 (LAI), and 0.1600 (combined events), compared with 0.1901, 0.1972, and 0.2209 in other contexts.
+- The seasonal-minus-permanent EVI contrast is supported after measured-covariate adjustment and common-landscape restriction. LAI permanence evidence is weaker. All unadjusted national 5° spatial-block contrast intervals include zero; adjusted spatial results are reported separately.
 - Broad distance-related increases occur in the geographically restricted distance subset; they do not establish a shoreline protection radius.
 - Regional LAI contrasts are positive in Southwest and South China and negative in East China. Mean high-stress seasonal LAI change is similar in permanent and other contexts.
 - Excluding each evaluated year from its anomaly reference retains positive permanent-versus-other contrasts in paired analyses, but event agreement is 91.3% for EVI, 89.5% for LAI and 87.2% for combined events. Classification is therefore not baseline-invariant.
+
+- A non-overlapping 2001–2017 reference substantially weakens the national permanence contrasts: with original exposure fixed, all six historical-response intervals include zero. The recent-reference finding is therefore conditional on anomaly definition. See the [historical-reference experiment](experiments/E07_historical_reference/README.md).
 
 ## Research overview
 
@@ -39,7 +41,8 @@ The [computation guide](docs/COMPUTATION_STEPS.md) specifies inputs, transformat
 | 8 | Assess landscape and agricultural composition | analysis_evidence/corrected_covariate_balance.csv; experiments/E02_confounding/corrected_noncrop/ | src/common_landscape.py; src/noncropland_sensitivity.py |
 | 9 | Evaluate sensitivity and spatial uncertainty | experiments/E01_spatial_support/corrected_1km/robustness/ | src/robustness.py; src/analyze_corrected_1km.py |
 | 10 | Recalculate target-year-excluded anomalies | final_results/data/baseline/ | src/final_release/baseline_crossfit.py |
-| 11 | Generate quantitative figures | final_results/figure_source_map.csv | src/final_release/plot_final_figures.py |
+| 11 | Compare an independent 2001–2017 reference | experiments/E07_historical_reference/ | experiments/E07_historical_reference/historical_reference.py |
+| 12 | Generate quantitative figures | final_results/figure_source_map.csv | src/final_release/plot_final_figures.py |
 
 ### Worked AFB calculation
 
@@ -203,7 +206,7 @@ Install `requirements.txt`, then run `python src/final_release/plot_final_figure
 
 For the target-year-excluded anomaly experiment, set `RAW_CORE_PANEL` to the patched 16-day source panel and `AQUATIC_PANEL` to the seasonal analysis panel, then run `python src/final_release/baseline_crossfit.py`. The [analysis guide](final_results/README.md) identifies every evidence directory. The [figure source map](final_results/figure_source_map.csv) links figures to numerical inputs.
 
-The [computation guide](docs/COMPUTATION_STEPS.md) documents the analysis sequence. Numbered main and supplementary figures are in `final_results/figures`. Computationally intensive cloud exports are disabled by default. The independent long-reference and national within-cell/grid-realignment experiments have not been completed. Exact upstream product and quality-mask gaps are documented in the source inventory rather than inferred from variable names.
+The [computation guide](docs/COMPUTATION_STEPS.md) documents the analysis sequence. Numbered main and supplementary figures are in `final_results/figures`. Computationally intensive cloud exports are disabled by default. The independent historical-reference comparison is documented in [E07](experiments/E07_historical_reference/README.md). National within-cell and grid-realignment tests are not supplied. Exact upstream product and quality-mask gaps are documented in the source inventory rather than inferred from variable names.
 
 Summer (DOY 152–243) and late summer (DOY 213–273), assigned by 16-day midpoints, overlap on DOY 213–243. The exposure–response association is partly concurrent. Positive point estimates alone do not establish causality; spatial uncertainty is reported across all tested block sizes.
 
@@ -214,3 +217,9 @@ This repository contains research code, source metadata and derived evidence. La
 ## Sampling and spatial sensitivity
 
 [Analysis specifications, numerical outputs and scripts](experiments/E06_sampling_spatial_sensitivity/README.md) cover adjusted spatial uncertainty, seasonal observation counts, sample retention, distance support and corrected 2021 water seasonality.
+
+## Independent historical reference
+
+[Methods, complete estimates and Figure S18](experiments/E07_historical_reference/README.md) compare recent and historical references on paired samples.
+
+![Independent historical reference](experiments/E07_historical_reference/Fig_S18.png)

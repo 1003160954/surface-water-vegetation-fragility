@@ -1,0 +1,46 @@
+{
+  "reference_years": [
+    2001,
+    2017
+  ],
+  "target_years": [
+    2018,
+    2023
+  ],
+  "minimum_reference_counts": [
+    10,
+    15
+  ],
+  "reference_sd": "sample SD (ddof=1), >1e-6",
+  "z_clip": [
+    -5,
+    5
+  ],
+  "response_DOY": [
+    213,
+    273
+  ],
+  "exposure_DOY": [
+    152,
+    243
+  ],
+  "assignment": "16-day midpoint",
+  "bootstrap": 2000,
+  "seed": 20261020,
+  "uncertainty": "paired whole-cell percentile bootstrap; neighbouring-cell dependence not removed",
+  "scope": "independent in calendar time, not independent retrieval products",
+  "range_rules": {
+    "missing": "values <= -9990",
+    "EVI": [
+      -0.2,
+      1.2
+    ],
+    "LAI": [
+      0,
+      12
+    ]
+  },
+  "archive_check": "2018 R_6_2 common valid values equal after float32 casting for all six variables; broader upstream QA not verified",
+  "selection": "available historical annual exports; no imputation for absent grid-years",
+  "primary_analysis": "unchanged 2018\u20132023 reference; comparisons use identical retained records within each minimum-count rule"
+}

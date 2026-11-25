@@ -32,7 +32,7 @@ The main reference is first reproduced; each target year is then excluded from t
 - `data/diagnostics`: component means, seasonal LAI changes and regional estimates.
 - `data/regional_sample_support.csv`: original/corrected audit counts; final tables use classification `new`.
 
-The main sample is 236,995 grid-years from 48,843 cells. The continuous-distance subset is 80,265 records from 17,041 cells. Held-out reference comparisons retain 209,985 records from 37,878 cells. All are observational landscape associations. Unavailable independent long-reference, within-cell and grid-realignment tests are not implied by these outputs. Upstream product metadata gaps are documented in the source inventory.
+The main sample is 236,995 grid-years from 48,843 cells. The continuous-distance subset is 80,265 records from 17,041 cells. Held-out reference comparisons retain 209,985 records from 37,878 cells. All are observational landscape associations. The independent 2001–2017 reference comparison is provided separately in [E07](../experiments/E07_historical_reference/README.md). Within-cell and grid-realignment tests are not implied by these outputs. Upstream product metadata gaps are documented in the source inventory.
 
 `manifest.csv` identifies derived files and their hashes.
 
