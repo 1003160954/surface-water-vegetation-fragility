@@ -213,3 +213,7 @@ This repository contains research code, source metadata and derived evidence. La
 
 
 The seven map panels in Figs. 2–4 and Fig. S1 include individual southern-region crops taken from each corresponding map panel, overlaid on the supplied South China Sea reference outline. The [map PowerPoint](final_results/figures/Map_figures_editable.pptx) keeps each inset separately movable. [Source and role](final_results/assets/README.md). Each inset uses the corresponding panel’s data and colour scale.
+
+## Sampling and spatial sensitivity
+
+[Analysis specifications, numerical outputs and scripts](experiments/E06_sampling_spatial_sensitivity/README.md) cover adjusted spatial uncertainty, seasonal observation counts, sample retention, distance support and corrected 2021 water seasonality.

@@ -1,0 +1,9 @@
+{
+  "occurrence": "JRC/GSW1_4/GlobalSurfaceWater occurrence,1984\u20132021",
+  "seasonality": "projects/global-surface-water/assets/GSW1_5/Seasonality_2016_2021/2021_seasonality",
+  "scope": "seasonality processing correction only; not full v1.5 occurrence sensitivity",
+  "n_grids": 48843,
+  "changed": 140,
+  "bootstrap": 2000,
+  "date": "2026-11-25"
+}

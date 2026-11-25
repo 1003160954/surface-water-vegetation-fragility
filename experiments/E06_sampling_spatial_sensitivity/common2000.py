@@ -1,0 +1,17 @@
+from pathlib import Path
+import os,sys
+R=Path.cwd();ROOT=R;O=R/'experiments/E06_sampling_spatial_sensitivity';sys.path.insert(0,str(ROOT/'src'));os.environ['AQUATIC_PANEL']=os.environ.get('AQUATIC_PANEL',str(R/'data/raw/china_aquatic_buffering_panel_v2.parquet'))
+from audit_pipeline import load_panel,SEED
+import numpy as np,pandas as pd,json
+_,d=load_panel();cv=pd.read_csv(ROOT/'experiments/E02_confounding/harmonized_landcover_climate_covariates.csv');d=d.merge(cv,on='grid_id',validate='many_to_one');ctx=pd.read_csv(ROOT/'experiments/E01_spatial_support/national_corrected_1km_contexts.csv');d=d.merge(ctx,on='grid_id');d['context']=np.where(d.near_perm_1km_corrected==1,'permanent',np.where(d.near_seasonal_1km_corrected==1,'seasonal','other'));fields=['LC2018_grid_mode','climate_annual_temp_C','climate_annual_precip_mm','elevation'];d=d.dropna(subset=fields);grid=d.drop_duplicates('grid_id').copy();cut={}
+for col in fields[1:]:
+ _,bins=pd.qcut(grid[col],3,retbins=True,duplicates='drop');bins[0]=-np.inf;bins[-1]=np.inf;cut[col]=bins.tolist();d[col+'_bin']=pd.cut(d[col],bins,labels=False)
+d['stratum']=d.LC2018_grid_mode.astype(int).astype(str)
+for col in fields[1:]:d['stratum']+='_'+d[col+'_bin'].astype(str)
+q=d.HDSI.quantile([.25,.75]);d['h']=np.where(d.HDSI<q.iloc[0],0,np.where(d.HDSI>q.iloc[1],1,-1));d=d[d.context.isin(['permanent','seasonal'])&(d.h>=0)].copy();d['combo']=d.context.eq('seasonal').astype(int)*2+d.h;tab=d.groupby(['stratum','combo']).size().unstack(fill_value=0).reindex(columns=range(4),fill_value=0);gt=d.groupby(['stratum','context']).grid_id.nunique().unstack(fill_value=0);keep=tab.index[(tab.min(axis=1)>=10)&(gt.min(axis=1)>=5)];s=d[d.stratum.isin(keep)].copy();strata=pd.Index(keep);S=len(strata);assert S>0
+counts=s.groupby('stratum').grid_id.nunique().reindex(strata).to_numpy();w=counts/counts.sum();grids=pd.Index(s.grid_id.unique());gi=grids.get_indexer(s.grid_id);ix=strata.get_indexer(s.stratum)*4+s.combo.to_numpy();G=len(grids);rng=np.random.default_rng(SEED);bootw=np.array([np.bincount(rng.integers(G,size=G),minlength=G) for _ in range(2000)],dtype=float);rows=[]
+bad=np.where((bootw@np.column_stack([np.bincount(gi,weights=(ix==j),minlength=G) for j in range(4*S)])).reshape(2000,S,4)==0);pd.DataFrame({'replicate':bad[0],'stratum':strata.to_numpy()[bad[1]],'combo':bad[2]}).to_csv(O/'invalid_common_draws.csv',index=False)
+for e in ['EVI','LAI','combined']:
+ mats=np.zeros((G,4*S));np.add.at(mats,(gi,ix),1);den=mats.sum(axis=0).reshape(S,4);bden=(bootw@mats).reshape(2000,S,4);mats.fill(0);np.add.at(mats,(gi,ix),s[e].to_numpy());num=mats.sum(axis=0).reshape(S,4);bnum=(bootw@mats).reshape(2000,S,4);rates=num/den;br=bnum/np.where(bden>0,bden,np.nan);est=(w*(rates[:,3]-rates[:,2]-rates[:,1]+rates[:,0])).sum();draws=((br[:,:,3]-br[:,:,2]-br[:,:,1]+br[:,:,0])*w).sum(axis=1);lo,hi=np.nanquantile(draws,[.025,.975]);rows.append(dict(response=e,comparison='seasonal',AFB=est,ci_low=lo,ci_high=hi,n_model=len(s),n_grid=G,n_strata=S,eligible_low_high_rows=len(d),retained_fraction_rows=len(s)/len(d),valid_bootstrap_draws=np.isfinite(draws).sum(),bootstrap=2000,seed=SEED))
+
+pd.DataFrame(rows).to_csv(O/'common_landscape2000.csv',index=False);print(pd.DataFrame(rows).to_string(index=False))
